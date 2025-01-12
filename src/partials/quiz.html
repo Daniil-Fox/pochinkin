@@ -1,0 +1,286 @@
+<section class="quiz-container">
+  <div class="container">
+    <div class="quiz-container__wrap">
+      <h2 class="title2 quiz-container__title">
+        Рассчитайте стоимость ремонта вашей коляски
+      </h2>
+      <form class="quiz">
+        <div class="quiz__quest">
+          <span class="quiz__label"><span>01/</span> Выберите тип коляски</span>
+          <div class="quiz__grid">
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Прогулочная коляска"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Прогулочная коляска</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Модульная (2в1 или 3в1)"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Модульная (2в1 или 3в1)</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Трансформер"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Трансформер</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Трость"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Трость</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Люлька"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Люлька</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Другая"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Другая</div>
+            </label>
+          </div>
+        </div>
+        <div class="quiz__quest">
+          <span class="quiz__label"
+            ><span>02/</span>Какой у Вас бренд и модель коляски?</span
+          >
+          <div class="quiz__row">
+            <label class="quiz__wrap">
+              <input
+                type="text"
+                class="quiz__input"
+                name="Бренд"
+                placeholder="Введите бренд или модель коляски"
+              />
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz__quest">
+          <span class="quiz__label"><span>03/</span> Что у Вас сломалось?</span>
+          <div class="quiz__grid">
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Колесо"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Колесо</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Элементы регулировки, фиксаторы"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">
+                Элементы регулировки, фиксаторы
+              </div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Тормоза"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Тормоза</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Элементы корпуса"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Элементы корпуса</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Ручка"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Ручка</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Рама"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Рама</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Спинка"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Спинка</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Другое"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Другое</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz__quest">
+          <span class="quiz__label"
+            ><span>04/</span> Какой способ доставки коляски в сервис Вас
+            устроит?</span
+          >
+          <div class="quiz__grid quiz__grid--once">
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Отправить коляску курьером"
+                name="delivery"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Отправить коляску курьером</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Привезу коляску в сервис самостоятельно"
+                name="delivery"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">
+                Привезу коляску в сервис самостоятельно
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz__quest">
+          <span class="quiz__label"
+            ><span>05/</span>
+            Как срочно Вам нужен ремонт коляски?
+          </span>
+          <div class="quiz__grid">
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Сегодня"
+                name="sroch"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Сегодня</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Завтра"
+                name="sroch"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Завтра</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Не срочно"
+                name="sroch"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Не срочно</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz__quest">
+          <span class="quiz__label"
+            ><span>06/</span>
+            Осталось совсем чу-чуть, заполните Ваши контактные данные:
+          </span>
+          <div class="quiz__row quiz__row--long">
+            <label class="quiz__wrap">
+              <input
+                type="text"
+                name="Имя"
+                placeholder="Введите имя"
+                class="quiz__input"
+              />
+            </label>
+            <label class="quiz__wrap">
+              <input
+                type="tel"
+                name="Телефон"
+                placeholder="Введите телефон"
+                class="quiz__input"
+              />
+            </label>
+            <label class="quiz__wrap">
+              <input
+                type="email"
+                placeholder="Введите электронную почту"
+                name="email"
+                class="quiz__input"
+              />
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz__bottom">
+          <button class="btn-reset btn quiz__btn">Получить расчет</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

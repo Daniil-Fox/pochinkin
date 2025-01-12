@@ -1,0 +1,34 @@
+.ready {
+  margin-bottom: 10rem;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 5rem;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: hsl(0, 0%, 19%);
+  }
+  &__slider {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+    .swiper-slide {
+      box-sizing: border-box;
+    }
+  }
+  &__pagination {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__ba {
+    height: 46.4rem;
+  }
+}

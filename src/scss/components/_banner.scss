@@ -1,0 +1,99 @@
+.banner {
+  &__container {
+    display: flex;
+    background-image: url("./../img/waves.svg"),
+      linear-gradient(152deg, #303030 0%, #222 100%);
+    background-repeat: no-repeat;
+    background-position: -10% -8rem, center;
+    background-size: 38rem 30rem, cover;
+    border-radius: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      width: 6.7rem;
+      height: 5.8rem;
+
+      background-image: url("./../img/black-dots.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__content {
+    padding: 5rem;
+    padding-bottom: 8rem;
+    width: 100%;
+    max-width: 61.5rem;
+    flex-shrink: 0;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: #f6f7f8;
+  }
+
+  &__title {
+    margin-bottom: 3.5rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem 2.8rem;
+  }
+  &__item {
+    display: flex;
+    max-width: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1 0 auto;
+    &:nth-child(odd) {
+      max-width: 25.5rem;
+      flex-shrink: 0;
+    }
+    &:nth-child(even) {
+      max-width: 22.8rem;
+    }
+  }
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+
+    flex-shrink: 0;
+
+    img {
+      height: 3rem;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  &__name {
+    color: #f6f7f8;
+  }
+
+  &__img {
+    position: relative;
+    flex: 1;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

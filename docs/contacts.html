@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Починкин</title>
+  <link
+    rel="preload"
+    href="fonts/VelaSans-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Bold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script
+    src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=221cbec3-01c0-4b1a-8417-d7d65e719c35&suggest_apikey=3127f73d-e47f-4cde-a746-7e4846b2b8e2"
+    type="text/javascript"
+  ></script>
+  <script defer src="./yandex-map.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header" id="header">
+  <div class="container">
+    <div class="header__container">
+      <div class="header__left">
+        <a href="./" class="header__logo">
+          <img src="./img/logo.webp" alt="" />
+        </a>
+
+        <div class="header__tel">
+          <span>Единый бесплатный телефон</span>
+          <a href="tel:88002004434">8 800 200 44 34</a>
+        </div>
+      </div>
+
+      <div class="header__right">
+        <button class="btn-reset btn btn--stroke header__btn">
+          Контакты и адреса мастерских
+        </button>
+        <button class="btn-reset btn header__btn">Перезвоните мне</button>
+      </div>
+    </div>
+  </div>
+  <div class="header__nav">
+    <div class="container">
+      <nav class="nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Сотрудничество</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Франшиза</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <div class="container">
+  <div class="breadcrumbs">
+    <span>
+      <span>
+        <a href="./">Главная</a>
+      </span>
+      <span>Контакты</span>
+    </span>
+  </div>
+</div>
+<section class="contacts-main">
+  <div class="container">
+    <h1 class="title2 contacts-main__title">
+      Контакты сети мастерских Мистер Починкин
+    </h1>
+    <div class="contacts-main__items">
+      <div class="contacts-main__item contactsM-item">
+        <div class="contactsM-item__capture capture">
+          Время работы коллцентра
+        </div>
+        <ul class="list-reset contactsM-item__list desc">
+          <li>Пн — Пт: с 09:00 до 20:00</li>
+          <li>Сб: с 11:00 до 17:00</li>
+          <li>Вс: с 11:00 до 17:00</li>
+        </ul>
+      </div>
+      <div class="contacts-main__item contactsM-item">
+        <div class="contactsM-item__capture capture">Электронная почта</div>
+        <a href="mailto:info@mr-pochinkin.ru" class="contactsM-item__link"
+          >info@mr-pochinkin.ru</a
+        >
+      </div>
+      <div class="contacts-main__item contactsM-item">
+        <div class="contactsM-item__capture capture">Телефоны</div>
+        <div class="contactsM-item__block">
+          <span class="contactsM-item__label"> Многоканальный телефон </span>
+          <a href="tel:+7 (495) 182-43-43" class="contactsM-item__tel"
+            >+7 495 182-43-43</a
+          >
+        </div>
+        <div class="contactsM-item__block">
+          <span class="contactsM-item__label"> WhatsApp для фото поломок </span>
+          <a href="#" class="contactsM-item__tel contactsM-item__tel--whatsapp"
+            >+7 903 724-23-92</a
+          >
+        </div>
+      </div>
+      <div class="contactsM-item__item contactsM-item">
+        <div class="contactsM-item__capture capture">Адреса</div>
+        <p class="contactsM-item__desc desc">
+          Сеть мастерских — более 10 сервисных центов в Москве, Санкт-Петербруге
+          и других городах России.
+        </p>
+        <a href="#contacts-map" class="contactsM-item__link"
+          >Адеса указаны ниже.</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="contacts" id="contacts-map">
+  <div class="container">
+    <h2 class="title2 contacts__title">Адреса наших сервисов</h2>
+    <div class="contacts__row">
+      <div class="contacts__tab active" data-contacts-tab="list">Списком</div>
+      <div class="contacts__tab" data-contacts-tab="map">На карте</div>
+      <div class="contacts__form">
+        <input
+          type="text"
+          class="contacts__input"
+          id="suggest"
+          placeholder="Поиск по адресу"
+        />
+        <button class="btn-reset contacts__search">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.62499 1.8335C8.38253 1.8336 7.15811 2.13083 6.05389 2.70038C4.94967 3.26993 3.99766 4.09529 3.27729 5.1076C2.55692 6.11991 2.08908 7.28981 1.9128 8.5197C1.73653 9.74959 1.85693 11.0038 2.26395 12.1777C2.67098 13.3516 3.35283 14.4111 4.25262 15.2679C5.15241 16.1247 6.24405 16.7539 7.43646 17.103C8.62887 17.4521 9.88747 17.5109 11.1073 17.2747C12.327 17.0384 13.4726 16.5139 14.4485 15.7448L17.7962 19.0925C17.969 19.2595 18.2006 19.3519 18.4409 19.3498C18.6813 19.3477 18.9112 19.2513 19.0812 19.0813C19.2511 18.9114 19.3475 18.6815 19.3496 18.4411C19.3517 18.2008 19.2593 17.9692 19.0923 17.7963L15.7447 14.4487C16.6503 13.2997 17.2142 11.919 17.3718 10.4646C17.5294 9.01013 17.2744 7.54068 16.6359 6.22442C15.9973 4.90815 15.0011 3.79824 13.7613 3.02171C12.5214 2.24518 11.088 1.8334 9.62499 1.8335ZM3.66665 9.62516C3.66665 8.04491 4.29441 6.52939 5.41181 5.41198C6.52921 4.29458 8.04474 3.66683 9.62499 3.66683C11.2052 3.66683 12.7208 4.29458 13.8382 5.41198C14.9556 6.52939 15.5833 8.04491 15.5833 9.62516C15.5833 11.2054 14.9556 12.7209 13.8382 13.8383C12.7208 14.9557 11.2052 15.5835 9.62499 15.5835C8.04474 15.5835 6.52921 14.9557 5.41181 13.8383C4.29441 12.7209 3.66665 11.2054 3.66665 9.62516Z"
+              fill="#8E8E8E"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="controls">
+      <div
+        class="contacts__row contacts__cities contacts__row--30"
+        id="cities"
+      ></div>
+    </div>
+
+    <div class="contacts__content active" data-contacts-content="list">
+      <div class="contacts__city">Москва</div>
+      <ul class="contacts__list list-reset">
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">Красноармейская, 23</div>
+            <div class="contacts-item__metro">метро Аэропорт</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Пн-Пт: 11:00 — 20:00</span>
+            <span>Сб-Вс: 11:00 — 16:00</span>
+            <a href="tel:+74950235544">+7 495 023-55-44</a>
+          </div>
+        </li>
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">Луговой проезд, 11</div>
+            <div class="contacts-item__metro">метро Марьино</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Пн-Пт: 9:00 — 20:00</span>
+            <span>Сб-Вс: 11:00 — 17:00</span>
+            <a href="tel:+74953247676"> +7 (495) 324-76-76</a>
+            <a href="tel:+74953247676"> +7 (495) 324-76-76</a>
+            <small>Whatsapp для фото поломок</small>
+          </div>
+        </li>
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">Миклухо-Маклая, 34</div>
+            <div class="contacts-item__metro">метро Беляево</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Пн-Пт: 11:00 — 20:00</span>
+            <span>Сб-Вс: 11:00 — 16:00</span>
+            <a href="tel:+74950325151">+7 495 032-51-51</a>
+          </div>
+        </li>
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">
+              Амундсена, 3 (корп. 2, подъезд 3, домофон 2В)
+            </div>
+            <div class="contacts-item__metro">метро Свиблово</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Вт-Вс: 11-00 — 19-30</span>
+            <span> Пн — выходной</span>
+            <a href="tel:+79257625127">+7 925 762-51-27</a>
+          </div>
+        </li>
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">Студенческая, 32</div>
+            <div class="contacts-item__metro">метро Студенческая</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Пн-Пт: 9:00 — 20:00</span>
+            <span>Сб-Вс: 11:00 — 17:00</span>
+            <a href="tel:+79037242392">+7 903 724-23-92</a>
+            <small>работает WhatsApp</small>
+          </div>
+        </li>
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">
+              Рубцовская набережная, 2 (корп. 3)
+            </div>
+            <div class="contacts-item__metro">метро Электрозаводская</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Пн-Пт: 11:00 — 20:00</span>
+            <span>Сб-Вс: 10:00 — 17:00</span>
+            <a href="tel:+74953241616">+7 495 324-16-16</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contacts__content" data-contacts-content="map">
+      <div id="map"></div>
+    </div>
+  </div>
+</section>
+
+<!-- <script type="module">
+  let myMap;
+  init();
+  // Инициализация карты
+  async function init() {
+    await ymaps3.ready;
+
+    const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = ymaps3;
+
+    // Import the package to add a default marker
+    const { YMapDefaultMarker } = await ymaps3.import(
+      "@yandex/ymaps3-default-ui-theme"
+    );
+
+    myMap = new YMap(
+      document.getElementById("map"),
+      {
+        location: {
+          center: [37.588144, 55.733842],
+          zoom: 10,
+        },
+      },
+      [new YMapDefaultSchemeLayer({}), new YMapDefaultFeaturesLayer({})]
+    );
+    // Массив для хранения меток
+    const placemarks = [
+      {
+        coords: [55.7558, 37.6173],
+        hint: "Филиал СДЕК 1",
+        balloon: "Адрес: Филиал 1",
+      },
+      {
+        coords: [55.761, 37.6173],
+        hint: "Филиал СДЕК 2",
+        balloon: "Адрес: Филиал 2",
+      },
+    ];
+
+    // Создаем метки и добавляем их на карту
+    placemarks.forEach(function (place) {
+      const marker = new YMapDefaultMarker({
+        coordinates: place.coords,
+        title: "africa",
+      });
+      myMap.addChild(marker);
+    });
+
+    // Обработчик клика по заведению в списке
+    // document.querySelectorAll(".place").forEach(function (element) {
+    //   element.addEventListener("click", function () {
+    //     const coords = JSON.parse(this.getAttribute("data-coords"));
+    //     myMap.setCenter(coords, 15); // Увеличение уровня зума и центрирование карты
+    //   });
+    // });
+
+    // // Обработчик клика по кнопкам городов
+    // document.querySelectorAll(".city-button").forEach(function (button) {
+    //   button.addEventListener("click", function () {
+    //     const cityCoords = JSON.parse(this.getAttribute("data-coords"));
+    //     myMap.setCenter(cityCoords, 12); // Установить уровень зума
+
+    //     // Меняем цвет кнопки
+    //     document
+    //       .querySelectorAll(".city-button")
+    //       .forEach((btn) => btn.classList.remove("active"));
+    //     this.classList.add("active");
+    //   });
+    // });
+  }
+</script> -->
+
+<!-- <script>
+  ymaps.ready(init);
+
+  let myMap;
+
+  const placemarks = [
+    {
+      coords: [55.831903, 37.411961],
+      hint: "Филиал СДЕК 1",
+      address: "Адрес: Филиал 1",
+    },
+    {
+      coords: [55.763338, 37.565466],
+      hint: "Филиал СДЕК 2",
+      address: "Адрес: Филиал 2",
+    },
+
+    {
+      coords: [55.744522, 37.616378],
+      hint: "Филиал СДЕК 4",
+      address: "Адрес: Филиал 4",
+    },
+    {
+      coords: [55.780898, 37.642889],
+      hint: "Филиал СДЕК 5",
+      address: "Адрес: Филиал 5",
+    },
+    {
+      coords: [55.793559, 37.435983],
+      hint: "Филиал СДЕК 6",
+      address: "Адрес: Филиал 6",
+    },
+  ];
+
+  var find = function (arr, find) {
+    return arr.filter(function (value) {
+      return (
+        (value.address + "").toLowerCase().indexOf(find.toLowerCase()) != -1
+      );
+    });
+  };
+  var myProvider = {
+    suggest: function (request, options) {
+      console.log(request);
+      var res = find(placemarks, request),
+        arrayResult = [],
+        results = Math.min(options.results, res.length);
+      for (var i = 0; i < results; i++) {
+        arrayResult.push({
+          displayName: res[i].hint,
+          value: res[i].address,
+        });
+      }
+      return ymaps.vow.resolve(arrayResult);
+    },
+  };
+
+  function init() {
+    // Создаём экземпляр карты
+    myMap = new ymaps.Map("map", {
+      center: [55.7558, 37.6173], // Начальные координаты (Москва)
+      zoom: 10,
+    });
+
+    var suggestView1 = new ymaps.SuggestView("suggest", {
+      provider: myProvider,
+      results: 3,
+    });
+
+    objectManager = new ymaps.ObjectManager({
+      // Чтобы метки начали кластеризоваться, выставляем опцию.
+      clusterize: true,
+      geoObjectOpenBalloonOnClick: false,
+      clusterOpenBalloonOnClick: false,
+    });
+
+    // Массив для хранения меток
+
+    const features = placemarks.map((shop, index) => {
+      return {
+        type: "Feature",
+        id: index,
+        geometry: {
+          type: "Point",
+          coordinates: shop.coords,
+        },
+        properties: {
+          balloonContent: `<strong>${shop.hint}</strong><br>${shop.balloon}`,
+          id: index, // Добавить ID для работы с кликами
+        },
+      };
+    });
+
+    objectManager.add({
+      type: "FeatureCollection",
+      features: features,
+    });
+    myMap.geoObjects.add(objectManager);
+    // Обработчик клика по заведению в списке
+    document.querySelectorAll(".place").forEach(function (element) {
+      element.addEventListener("click", function () {
+        const coords = JSON.parse(this.getAttribute("data-coords"));
+        myMap.setCenter(coords, 15); // Увеличение уровня зума и центрирование карты
+      });
+    });
+
+    const cityButtons = document.querySelectorAll(".contacts__city-button");
+    // // Обработчик клика по кнопкам городов
+    const clearActive = () => {
+      cityButtons.forEach((btn) => btn.classList.remove("active"));
+    };
+
+    cityButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        clearActive();
+        button.classList.add("active");
+
+        const cityCoords = JSON.parse(this.getAttribute("data-coords"));
+        myMap.setCenter(cityCoords, 12); // Установить уровень зума
+
+        // Меняем цвет кнопки
+        document
+          .querySelectorAll(".city-button")
+          .forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
+      });
+    });
+  }
+</script> -->
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <div class="footer__col">
+        <div class="footer__cont">
+          <span>Единый бесплатный телефон</span>
+          <a class="footer__capture capture" href="tel:88002004434"
+            >8 800 200 44 34</a
+          >
+        </div>
+        <div class="footer__cont">
+          <span>Многоканальный телефон</span>
+          <a class="footer__capture capture" href="tel:+74951824343 "
+            >+7 495 182-43-43</a
+          >
+        </div>
+        <div class="footer__cont">
+          <span>Электронная почта</span>
+          <a class="footer__capture capture" href="mailto:info@mr-pochinkin.ru"
+            >info@mr-pochinkin.ru</a
+          >
+        </div>
+        <a href="#" class="footer__link"> Контакты и адреса мастерских </a>
+      </div>
+      <div class="footer__col">
+        <nav class="footer__nav f-nav">
+          <div class="f-nav__capture capture">Каталог</div>
+          <ul class="list-reset f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт чемоданов</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт детских колясок</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт очков</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт электросамокатов</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <nav class="footer__nav f-nav">
+          <div class="f-nav__capture capture">Информация</div>
+          <ul class="list-reset f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Услуги</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Франшиза</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">О нас</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <button class="btn-reset btn footer__btn">Перезвоните мне</button>
+        <div class="footer__socials">
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#tg"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <a href="#header" class="footer__up">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 5L18 11M12 5L6 11M12 5V19"
+                stroke="#8E8E8E"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

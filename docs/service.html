@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Починкин</title>
+  <link
+    rel="preload"
+    href="fonts/VelaSans-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Bold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script
+    src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=221cbec3-01c0-4b1a-8417-d7d65e719c35&suggest_apikey=3127f73d-e47f-4cde-a746-7e4846b2b8e2"
+    type="text/javascript"
+  ></script>
+  <script defer src="./yandex-map.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header" id="header">
+  <div class="container">
+    <div class="header__container">
+      <div class="header__left">
+        <a href="./" class="header__logo">
+          <img src="./img/logo.webp" alt="" />
+        </a>
+
+        <div class="header__tel">
+          <span>Единый бесплатный телефон</span>
+          <a href="tel:88002004434">8 800 200 44 34</a>
+        </div>
+      </div>
+
+      <div class="header__right">
+        <button class="btn-reset btn btn--stroke header__btn">
+          Контакты и адреса мастерских
+        </button>
+        <button class="btn-reset btn header__btn">Перезвоните мне</button>
+      </div>
+    </div>
+  </div>
+  <div class="header__nav">
+    <div class="container">
+      <nav class="nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Сотрудничество</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Франшиза</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <div class="container">
+  <div class="breadcrumbs">
+    <span>
+      <span>
+        <a href="#"> Главная </a>
+      </span>
+      <span>Услуги</span>
+    </span>
+  </div>
+</div>
+<section class="service-hero">
+  <div class="container">
+    <h1 class="service-hero__title title2">
+      Услуги мастерской Мистер Починкин
+    </h1>
+
+    <ul class="list-reset service-hero__list">
+      <li class="service-hero__item service-item">
+        <div class="service-item__title">Ремонт детских колясок</div>
+        <div class="service-item__body">
+          <p class="service-item__desc desc">
+            Слабым местом нередко оказывается подвеска. Ломается планка, которая
+            соединяет колеса, слетает ось, заедает тормоз. Это не позволяет
+            использовать основную функцию коляски: сохранять покой и
+            безопасность ребенка при его транспортировке. Необходимо срочно
+            произвести ремонт, чтобы продолжать спокойно гулять.
+          </p>
+
+          <button class="btn-reset btn btn--stroke service-item__btn">
+            Заказать
+          </button>
+        </div>
+      </li>
+      <li class="service-hero__item service-item">
+        <div class="service-item__title">Ремонт электротранспорта</div>
+        <div class="service-item__body">
+          <p class="service-item__desc desc">
+            Слабым местом нередко оказывается подвеска. Ломается планка, которая
+            соединяет колеса, слетает ось, заедает тормоз. Это не позволяет
+            использовать основную функцию коляски: сохранять покой и
+            безопасность ребенка при его транспортировке. Необходимо срочно
+            произвести ремонт, чтобы продолжать спокойно гулять.
+          </p>
+
+          <button class="btn-reset btn btn--stroke service-item__btn">
+            Заказать
+          </button>
+        </div>
+      </li>
+      <li class="service-hero__item service-item">
+        <div class="service-item__title">Ремонт очков</div>
+        <div class="service-item__body">
+          <p class="service-item__desc desc">
+            Сервсный центр Мистер Починкин, осуществляет ремонт очков различных
+            брендов — чиним модели более 95 производителей, как китайского, так
+            и европейского производства.Профессиональное оборудование, большой
+            опыт работы и наличие фирменных запчастей, позволяет чинить даже
+            самые новые модели текущего года.
+          </p>
+
+          <button class="btn-reset btn btn--stroke service-item__btn">
+            Заказать
+          </button>
+        </div>
+      </li>
+      <li class="service-hero__item service-item">
+        <div class="service-item__title">Ремонт чемоданов на колесиках</div>
+        <div class="service-item__body">
+          <p class="service-item__desc desc">
+            Разошлась или лопнула молния; перестала выдвигаться ручка, колесико
+            начало уходить в сторону. Эти и другие поломки не позволяют
+            нормально эксплуатировать изделие, лишая человека возможности
+            комфортно путешествовать. Именно поэтому большинство поломок, мы
+            можем устранить в день обращения!
+          </p>
+
+          <button class="btn-reset btn btn--stroke service-item__btn">
+            Заказать
+          </button>
+        </div>
+      </li>
+      <li class="service-hero__item service-item">
+        <div class="service-item__title">Реставрация и химчистка изделий</div>
+        <div class="service-item__body">
+          <p class="service-item__desc desc">
+            Помимо ремонта изделий, наша мастерская выполняет услуги по
+            реставрации и химчистке различных изделий. Профессионализм наших
+            мастеров, качественные щадящие материалы, индивидуальный подход к
+            каждому заказу обеспечивают качественный результат.
+          </p>
+
+          <button class="btn-reset btn btn--stroke service-item__btn">
+            Заказать
+          </button>
+        </div>
+      </li>
+    </ul>
+    <div class="service-hero__extra desc">
+      Мы работаем строгу по прайсу. Рассчитать точную стоимость ремонта можно на
+      месте либо обратившись на WhatsUp номер.
+    </div>
+  </div>
+</section>
+ <section class="dets">
+  <div class="container">
+    <h2 class="title2 dets__title">Запчасти в наличии и на заказ</h2>
+    <p class="dets__desc desc">
+      Если в вашей семье есть мастер на все руки, который может починить что-то
+      сам, ему наверняка понадобятся детали. Колесики, шарниры, втулки,
+      фастексы, пружины-амортизаторы — это не всегда можно купить в ближайшем
+      хозяйственном магазине. Мы предлагаем оригинальные или альтернативные
+      запчасти для ваших изделий, чтобы вы могли отремонтировать их дома.
+    </p>
+
+    <section class="banner">
+  <div class="banner__container">
+    <div class="banner__content">
+      <p class="banner__subtitle">Сервисные центры</p>
+      <h2 class="title2 title2--white banner__title">Мистер Починкин</h2>
+      <div class="banner__items">
+        <div class="banner__item">
+          <div class="banner__icon">
+            <img src="./img/shield.svg" alt="" />
+          </div>
+          <p class="desc banner__name">
+            продаем оригинальные запчасти и аналоги
+          </p>
+        </div>
+        <div class="banner__item">
+          <div class="banner__icon">
+            <img src="./img/cubes.svg" alt="" />
+          </div>
+          <p class="desc banner__name">чиним даже сложные поломки</p>
+        </div>
+        <div class="banner__item">
+          <div class="banner__icon">
+            <img src="./img/rub.svg" alt="" />
+          </div>
+          <p class="desc banner__name">доступные цены на ремонт</p>
+        </div>
+        <div class="banner__item">
+          <div class="banner__icon">
+            <img src="./img/person.svg" alt="" />
+          </div>
+          <p class="desc banner__name">поможем подобрать запчасти</p>
+        </div>
+      </div>
+    </div>
+    <div class="banner__img">
+      <img src="./img/banner.webp" alt="" />
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <div class="footer__col">
+        <div class="footer__cont">
+          <span>Единый бесплатный телефон</span>
+          <a class="footer__capture capture" href="tel:88002004434"
+            >8 800 200 44 34</a
+          >
+        </div>
+        <div class="footer__cont">
+          <span>Многоканальный телефон</span>
+          <a class="footer__capture capture" href="tel:+74951824343 "
+            >+7 495 182-43-43</a
+          >
+        </div>
+        <div class="footer__cont">
+          <span>Электронная почта</span>
+          <a class="footer__capture capture" href="mailto:info@mr-pochinkin.ru"
+            >info@mr-pochinkin.ru</a
+          >
+        </div>
+        <a href="#" class="footer__link"> Контакты и адреса мастерских </a>
+      </div>
+      <div class="footer__col">
+        <nav class="footer__nav f-nav">
+          <div class="f-nav__capture capture">Каталог</div>
+          <ul class="list-reset f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт чемоданов</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт детских колясок</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт очков</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт электросамокатов</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <nav class="footer__nav f-nav">
+          <div class="f-nav__capture capture">Информация</div>
+          <ul class="list-reset f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Услуги</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Франшиза</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">О нас</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <button class="btn-reset btn footer__btn">Перезвоните мне</button>
+        <div class="footer__socials">
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#tg"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <a href="#header" class="footer__up">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 5L18 11M12 5L6 11M12 5V19"
+                stroke="#8E8E8E"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

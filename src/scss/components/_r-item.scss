@@ -1,0 +1,12 @@
+.r-item {
+  display: flex;
+  gap: 2.4rem;
+  align-items: flex-start;
+
+  &__count {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #b01c32;
+  }
+}

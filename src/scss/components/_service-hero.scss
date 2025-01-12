@@ -1,0 +1,36 @@
+.service-hero {
+  margin-bottom: 10rem;
+  &__title {
+    margin-bottom: 2.5rem;
+  }
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__extra {
+    color: #b01c32;
+    line-height: 1.62;
+  }
+}
+
+.service-item {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e8e9ec;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  &__title {
+    margin-bottom: 1rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #303030;
+  }
+
+  &__body {
+    display: flex;
+    align-items: flex-start;
+    gap: 7.6rem;
+  }
+}

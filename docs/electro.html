@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Починкин</title>
+  <link
+    rel="preload"
+    href="fonts/VelaSans-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Bold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script
+    src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=221cbec3-01c0-4b1a-8417-d7d65e719c35&suggest_apikey=3127f73d-e47f-4cde-a746-7e4846b2b8e2"
+    type="text/javascript"
+  ></script>
+  <script defer src="./yandex-map.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header" id="header">
+  <div class="container">
+    <div class="header__container">
+      <div class="header__left">
+        <a href="./" class="header__logo">
+          <img src="./img/logo.webp" alt="" />
+        </a>
+
+        <div class="header__tel">
+          <span>Единый бесплатный телефон</span>
+          <a href="tel:88002004434">8 800 200 44 34</a>
+        </div>
+      </div>
+
+      <div class="header__right">
+        <button class="btn-reset btn btn--stroke header__btn">
+          Контакты и адреса мастерских
+        </button>
+        <button class="btn-reset btn header__btn">Перезвоните мне</button>
+      </div>
+    </div>
+  </div>
+  <div class="header__nav">
+    <div class="container">
+      <nav class="nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Сотрудничество</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Франшиза</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <div class="container">
+  <div class="breadcrumbs">
+    <span>
+      <span>
+        <a href="#">Главная</a>
+      </span>
+      <span>
+        <a href="#">Услуги</a>
+      </span>
+      <span>Ремонт детских колясок</span>
+    </span>
+  </div>
+</div>
+<section class="hero hero--stroller">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero__container">
+              <div class="hero__left">
+                <h1 class="hero__title">Ремонт электротранспорта</h1>
+                <p class="hero__desc">
+                  Ремонтируем электросамокаты, моноколеса, гироскутеры,
+                  электровелосипеды
+                </p>
+                <button class="btn-reset btn">Оставить заявку</button>
+              </div>
+              <div class="hero__right">
+                <div class="hero__img">
+                  <img src="./img/main/05.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="hero__pagination pagination swiper-pagination"></ul>
+      </div>
+      <div
+        class="hero__control control-btn control-btn--prev hero__control--prev"
+      >
+        <svg
+          width="10"
+          height="16"
+          viewBox="0 0 10 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+          />
+        </svg>
+      </div>
+      <div
+        class="hero__control control-btn control-btn--next hero__control--next"
+      >
+        <svg
+          width="10"
+          height="16"
+          viewBox="0 0 10 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="brands">
+  <div class="container">
+    <h2 class="title2 brands__title">Сеть сервисных центров Мистер Починкин</h2>
+    <p class="desc brands__desc">
+      Сервсный центр Мистер Починкин, осуществляет ремонт детских колясок
+      различных брендов — чиним модели более 55 производителей: европейского,
+      российского и китайского производства. Профессиональное оборудование,
+      большой опыт работы и наличие фирменных запчастей, позволяет чинить даже
+      самые новые модели текущего года. Большинство поломок, мы можем устранить
+      в день обращения!
+    </p>
+    <p class="brands__subtitle title3 title3--dark">
+      В наличии запчасти к коляскам брендов
+    </p>
+
+    <div class="brands__slider swiper">
+      <div class="swiper-wrapper brands__items">
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/adamex.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/anex.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/babydoing.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/babythrone.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/yoya.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/babytime.webp" alt="" />
+        </div>
+
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/babyzen.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/bebemobile.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/bebetto.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/camarelo.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/curetto.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/cosatto.webp" alt="" />
+        </div>
+
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/espiro.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/esspero.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/indigo.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/jedo.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/joolz-short.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/lonex.webp" alt="" />
+        </div>
+
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/noordi.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/prampol.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/quipolo.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/retrus.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/riko-another.webp" alt="" />
+        </div>
+        <div class="swiper-slide brands__item">
+          <img src="./img/partners/roan.webp" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="brands__extra">
+      Полный список можно получить у менеджеров мастерской.
+    </div>
+  </div>
+</section>
+
+        <section class="dets">
+          <div class="container"><section class="banner">
+  <div class="banner__container">
+    <div class="banner__content">
+      <p class="banner__subtitle">Сервисные центры</p>
+      <h2 class="title2 title2--white banner__title">Мистер Починкин</h2>
+      <div class="banner__items">
+        <div class="banner__item">
+          <div class="banner__icon">
+            <img src="./img/shield.svg" alt="" />
+          </div>
+          <p class="desc banner__name">
+            продаем оригинальные запчасти и аналоги
+          </p>
+        </div>
+        <div class="banner__item">
+          <div class="banner__icon">
+            <img src="./img/cubes.svg" alt="" />
+          </div>
+          <p class="desc banner__name">чиним даже сложные поломки</p>
+        </div>
+        <div class="banner__item">
+          <div class="banner__icon">
+            <img src="./img/rub.svg" alt="" />
+          </div>
+          <p class="desc banner__name">доступные цены на ремонт</p>
+        </div>
+        <div class="banner__item">
+          <div class="banner__icon">
+            <img src="./img/person.svg" alt="" />
+          </div>
+          <p class="desc banner__name">поможем подобрать запчасти</p>
+        </div>
+      </div>
+    </div>
+    <div class="banner__img">
+      <img src="./img/banner.webp" alt="" />
+    </div>
+  </div>
+</section>
+</div>
+        </section>
+        <section class="completed">
+  <div class="container">
+    <h2 class="title2 completed__title">Выполненные работы</h2>
+    <div class="completed__wrapper">
+      <div class="completed__navigation">
+        <div
+          class="completed__control control-btn control-btn--prev completed__control--prev"
+        >
+          <svg
+            width="10"
+            height="16"
+            viewBox="0 0 10 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+            />
+          </svg>
+        </div>
+        <div
+          class="completed__control control-btn control-btn--next completed__control--next"
+        >
+          <svg
+            width="10"
+            height="16"
+            viewBox="0 0 10 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="completed__slider swiper swiper-no-swiping">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="completed__item comp-item">
+              <div class="comp-item__title title3">
+                Ремонт коляски Valco Baby
+              </div>
+
+              <div class="comp-item__container">
+                <div class="comp-item__info">
+                  <ul class="comp-item__list list-reset">
+                    <li>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0ZM10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2ZM10 4C10.2449 4.00003 10.4813 4.08996 10.6644 4.25272C10.8474 4.41547 10.9643 4.63975 10.993 4.883L11 5V9.586L13.707 12.293C13.8863 12.473 13.9905 12.7144 13.9982 12.9684C14.006 13.2223 13.9168 13.4697 13.7488 13.6603C13.5807 13.8508 13.3464 13.9703 13.0935 13.9944C12.8406 14.0185 12.588 13.9454 12.387 13.79L12.293 13.707L9.293 10.707C9.13758 10.5514 9.03776 10.349 9.009 10.131L9 10V5C9 4.73478 9.10536 4.48043 9.29289 4.29289C9.48043 4.10536 9.73478 4 10 4Z"
+                          fill="#B01C32"
+                        />
+                      </svg>
+                      1 день
+                    </li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 6.5V3.5M1 3.5C1 2.67 1.67 2 2.5 2L14.49 1C15.88 1 17 2.06 17 3.38V5H2.5C1.67 5 1 4.33 1 3.5ZM19 9H12.714C11.767 9 11 9.716 11 10.6V13.4C11 14.284 11.768 15 12.714 15H19M14 12H14.01M2.2 5H16.6C17.92 5 19 6.08 19 7.4V16.6C19 17.92 17.92 19 16.6 19H3.4C2.08 19 1 17.92 1 16.6V6.2C1 5.54 1.54 5 2.2 5Z"
+                          stroke="#B01C32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      2000 ₽
+                    </li>
+                    <li>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.875 12.375H12.375V17.25M3.75 9H20.25M15.75 6V3M8.25 6V3M5.25 21H18.75C19.1478 21 19.5294 20.842 19.8107 20.5607C20.092 20.2794 20.25 19.8978 20.25 19.5V6C20.25 5.60218 20.092 5.22064 19.8107 4.93934C19.5294 4.65804 19.1478 4.5 18.75 4.5H5.25C4.85218 4.5 4.47064 4.65804 4.18934 4.93934C3.90804 5.22064 3.75 5.60218 3.75 6V19.5C3.75 19.8978 3.90804 20.2794 4.18934 20.5607C4.47064 20.842 4.85218 21 5.25 21Z"
+                          stroke="#B01C32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Июнь 2024 года
+                    </li>
+                    <li>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2.99991L12.394 2.07991C12.2695 2.02654 12.1355 1.99902 12 1.99902C11.8645 1.99902 11.7305 2.02654 11.606 2.07991L12 2.99991ZM12 20.9999L11.504 21.8679C11.6551 21.9542 11.826 21.9996 12 21.9996C12.174 21.9996 12.3449 21.9542 12.496 21.8679L12 20.9999ZM11.606 2.08091L5.212 4.81991L6 6.65991L12.394 3.91991L11.606 2.08091ZM4 6.65891V13.5189H6V6.65891H4ZM7.527 19.5959L11.504 21.8679L12.496 20.1319L8.519 17.8589L7.527 19.5959ZM12.496 21.8679L16.473 19.5959L15.481 17.8589L11.504 20.1319L12.496 21.8679ZM20 13.5179V6.65991H18V13.5199L20 13.5179ZM18.788 4.82091L12.394 2.08091L11.606 3.91891L18 6.65991L18.788 4.82091ZM20 6.65991C20 6.26857 19.8851 5.88584 19.6697 5.55913C19.4542 5.23243 19.1477 4.9751 18.788 4.82091L18 6.65991H20ZM16.473 19.5959C17.5446 18.9835 18.4353 18.0997 19.0547 17.0321C19.6741 15.9645 20.0002 14.7522 20 13.5179H18C17.9999 14.3994 17.7667 15.2652 17.3242 16.0275C16.8816 16.7899 16.2454 17.4217 15.48 17.8589L16.473 19.5959ZM4 13.5179C3.99994 14.752 4.32615 15.9642 4.94554 17.0316C5.56494 18.099 6.45551 18.9836 7.527 19.5959L8.519 17.8589C7.75406 17.4217 7.11823 16.7902 6.67587 16.0282C6.23352 15.2663 6.00036 14.401 6 13.5199L4 13.5179ZM5.212 4.81991C4.85216 4.97417 4.5455 5.23165 4.33005 5.55855C4.11461 5.88545 3.99985 6.2684 4 6.65991H6L5.212 4.81991Z"
+                          fill="#B01C32"
+                        />
+                        <path
+                          d="M15 10L11 14L9 12"
+                          stroke="#B01C32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Гарантия 1 год
+                    </li>
+                  </ul>
+                  <div class="comp-item__capture capture">
+                    Этапы выполнения работы
+                  </div>
+                  <ul class="list-reset comp-item__steps">
+                    <li>
+                      Деликатная чистка кожи с помощью специального чистящего
+                      средства Leather Ultimate Cleaner Biocare Formula.
+                    </li>
+                    <li>
+                      Колеровка и подбор цвета с 100% совпадением цвета туфель.
+                    </li>
+                    <li>Ремонт мыса с помощью Heavy Filler.</li>
+                    <li>
+                      Нанесение адгезионного состава для прочной взаимосвязи
+                      кожи с краской Leather Primer
+                    </li>
+                    <li>Нанесение краски тонкими слоями.</li>
+                    <li>Нанесение защитного лака Leather Top Coat Gloss.</li>
+                  </ul>
+                </div>
+                <div class="comp-item__right">
+                  <div class="ready__ba b-a">
+                    <div class="b-a__before">
+                      <img src="./img/before-after/01.webp" alt="" />
+                    </div>
+                    <div class="b-a__after">
+                      <img src="./img/before-after/02.webp" alt="" />
+                    </div>
+                    <div class="b-a__change"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="completed__item comp-item">
+              <div class="comp-item__title title3">
+                Ремонт коляски Valco Baby
+              </div>
+
+              <div class="comp-item__container">
+                <div class="comp-item__info">
+                  <ul class="comp-item__list list-reset">
+                    <li>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0ZM10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2ZM10 4C10.2449 4.00003 10.4813 4.08996 10.6644 4.25272C10.8474 4.41547 10.9643 4.63975 10.993 4.883L11 5V9.586L13.707 12.293C13.8863 12.473 13.9905 12.7144 13.9982 12.9684C14.006 13.2223 13.9168 13.4697 13.7488 13.6603C13.5807 13.8508 13.3464 13.9703 13.0935 13.9944C12.8406 14.0185 12.588 13.9454 12.387 13.79L12.293 13.707L9.293 10.707C9.13758 10.5514 9.03776 10.349 9.009 10.131L9 10V5C9 4.73478 9.10536 4.48043 9.29289 4.29289C9.48043 4.10536 9.73478 4 10 4Z"
+                          fill="#B01C32"
+                        />
+                      </svg>
+                      1 день
+                    </li>
+                    <li>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 6.5V3.5M1 3.5C1 2.67 1.67 2 2.5 2L14.49 1C15.88 1 17 2.06 17 3.38V5H2.5C1.67 5 1 4.33 1 3.5ZM19 9H12.714C11.767 9 11 9.716 11 10.6V13.4C11 14.284 11.768 15 12.714 15H19M14 12H14.01M2.2 5H16.6C17.92 5 19 6.08 19 7.4V16.6C19 17.92 17.92 19 16.6 19H3.4C2.08 19 1 17.92 1 16.6V6.2C1 5.54 1.54 5 2.2 5Z"
+                          stroke="#B01C32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      2000 ₽
+                    </li>
+                    <li>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.875 12.375H12.375V17.25M3.75 9H20.25M15.75 6V3M8.25 6V3M5.25 21H18.75C19.1478 21 19.5294 20.842 19.8107 20.5607C20.092 20.2794 20.25 19.8978 20.25 19.5V6C20.25 5.60218 20.092 5.22064 19.8107 4.93934C19.5294 4.65804 19.1478 4.5 18.75 4.5H5.25C4.85218 4.5 4.47064 4.65804 4.18934 4.93934C3.90804 5.22064 3.75 5.60218 3.75 6V19.5C3.75 19.8978 3.90804 20.2794 4.18934 20.5607C4.47064 20.842 4.85218 21 5.25 21Z"
+                          stroke="#B01C32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Июнь 2024 года
+                    </li>
+                    <li>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2.99991L12.394 2.07991C12.2695 2.02654 12.1355 1.99902 12 1.99902C11.8645 1.99902 11.7305 2.02654 11.606 2.07991L12 2.99991ZM12 20.9999L11.504 21.8679C11.6551 21.9542 11.826 21.9996 12 21.9996C12.174 21.9996 12.3449 21.9542 12.496 21.8679L12 20.9999ZM11.606 2.08091L5.212 4.81991L6 6.65991L12.394 3.91991L11.606 2.08091ZM4 6.65891V13.5189H6V6.65891H4ZM7.527 19.5959L11.504 21.8679L12.496 20.1319L8.519 17.8589L7.527 19.5959ZM12.496 21.8679L16.473 19.5959L15.481 17.8589L11.504 20.1319L12.496 21.8679ZM20 13.5179V6.65991H18V13.5199L20 13.5179ZM18.788 4.82091L12.394 2.08091L11.606 3.91891L18 6.65991L18.788 4.82091ZM20 6.65991C20 6.26857 19.8851 5.88584 19.6697 5.55913C19.4542 5.23243 19.1477 4.9751 18.788 4.82091L18 6.65991H20ZM16.473 19.5959C17.5446 18.9835 18.4353 18.0997 19.0547 17.0321C19.6741 15.9645 20.0002 14.7522 20 13.5179H18C17.9999 14.3994 17.7667 15.2652 17.3242 16.0275C16.8816 16.7899 16.2454 17.4217 15.48 17.8589L16.473 19.5959ZM4 13.5179C3.99994 14.752 4.32615 15.9642 4.94554 17.0316C5.56494 18.099 6.45551 18.9836 7.527 19.5959L8.519 17.8589C7.75406 17.4217 7.11823 16.7902 6.67587 16.0282C6.23352 15.2663 6.00036 14.401 6 13.5199L4 13.5179ZM5.212 4.81991C4.85216 4.97417 4.5455 5.23165 4.33005 5.55855C4.11461 5.88545 3.99985 6.2684 4 6.65991H6L5.212 4.81991Z"
+                          fill="#B01C32"
+                        />
+                        <path
+                          d="M15 10L11 14L9 12"
+                          stroke="#B01C32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Гарантия 1 год
+                    </li>
+                  </ul>
+                  <div class="comp-item__capture capture">
+                    Этапы выполнения работы
+                  </div>
+                  <ul class="list-reset comp-item__steps">
+                    <li>
+                      Деликатная чистка кожи с помощью специального чистящего
+                      средства Leather Ultimate Cleaner Biocare Formula.
+                    </li>
+                    <li>
+                      Колеровка и подбор цвета с 100% совпадением цвета туфель.
+                    </li>
+                    <li>Ремонт мыса с помощью Heavy Filler.</li>
+                    <li>
+                      Нанесение адгезионного состава для прочной взаимосвязи
+                      кожи с краской Leather Primer
+                    </li>
+                    <li>Нанесение краски тонкими слоями.</li>
+                    <li>Нанесение защитного лака Leather Top Coat Gloss.</li>
+                  </ul>
+                </div>
+                <div class="comp-item__right">
+                  <div class="ready__ba b-a">
+                    <div class="b-a__before">
+                      <img src="./img/before-after/01.webp" alt="" />
+                    </div>
+                    <div class="b-a__after">
+                      <img src="./img/before-after/02.webp" alt="" />
+                    </div>
+                    <div class="b-a__change"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="completed__pagination pagination"></div>
+    </div>
+  </div>
+</section>
+ <section class="quiz-container">
+  <div class="container">
+    <div class="quiz-container__wrap">
+      <h2 class="title2 quiz-container__title">
+        Рассчитайте стоимость ремонта вашей коляски
+      </h2>
+      <form class="quiz">
+        <div class="quiz__quest">
+          <span class="quiz__label"><span>01/</span> Выберите тип коляски</span>
+          <div class="quiz__grid">
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Прогулочная коляска"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Прогулочная коляска</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Модульная (2в1 или 3в1)"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Модульная (2в1 или 3в1)</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Трансформер"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Трансформер</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Трость"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Трость</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Люлька"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Люлька</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Другая"
+                name="type"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Другая</div>
+            </label>
+          </div>
+        </div>
+        <div class="quiz__quest">
+          <span class="quiz__label"
+            ><span>02/</span>Какой у Вас бренд и модель коляски?</span
+          >
+          <div class="quiz__row">
+            <label class="quiz__wrap">
+              <input
+                type="text"
+                class="quiz__input"
+                name="Бренд"
+                placeholder="Введите бренд или модель коляски"
+              />
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz__quest">
+          <span class="quiz__label"><span>03/</span> Что у Вас сломалось?</span>
+          <div class="quiz__grid">
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Колесо"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Колесо</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Элементы регулировки, фиксаторы"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">
+                Элементы регулировки, фиксаторы
+              </div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Тормоза"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Тормоза</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Элементы корпуса"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Элементы корпуса</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Ручка"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Ручка</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Рама"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Рама</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Спинка"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Спинка</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Другое"
+                name="broken"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Другое</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz__quest">
+          <span class="quiz__label"
+            ><span>04/</span> Какой способ доставки коляски в сервис Вас
+            устроит?</span
+          >
+          <div class="quiz__grid quiz__grid--once">
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Отправить коляску курьером"
+                name="delivery"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Отправить коляску курьером</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Привезу коляску в сервис самостоятельно"
+                name="delivery"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">
+                Привезу коляску в сервис самостоятельно
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz__quest">
+          <span class="quiz__label"
+            ><span>05/</span>
+            Как срочно Вам нужен ремонт коляски?
+          </span>
+          <div class="quiz__grid">
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Сегодня"
+                name="sroch"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Сегодня</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Завтра"
+                name="sroch"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Завтра</div>
+            </label>
+            <label class="quiz__check quiz-check">
+              <input
+                type="radio"
+                class="visually-hidden"
+                value="Не срочно"
+                name="sroch"
+              />
+              <span class="quiz-check__box"></span>
+              <div class="quiz-check__text">Не срочно</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz__quest">
+          <span class="quiz__label"
+            ><span>06/</span>
+            Осталось совсем чу-чуть, заполните Ваши контактные данные:
+          </span>
+          <div class="quiz__row quiz__row--long">
+            <label class="quiz__wrap">
+              <input
+                type="text"
+                name="Имя"
+                placeholder="Введите имя"
+                class="quiz__input"
+              />
+            </label>
+            <label class="quiz__wrap">
+              <input
+                type="tel"
+                name="Телефон"
+                placeholder="Введите телефон"
+                class="quiz__input"
+              />
+            </label>
+            <label class="quiz__wrap">
+              <input
+                type="email"
+                placeholder="Введите электронную почту"
+                name="email"
+                class="quiz__input"
+              />
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz__bottom">
+          <button class="btn-reset btn quiz__btn">Получить расчет</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+        <section class="services-list">
+  <div class="container">
+    <h2 class="title2 services-list__title">
+      Услуги по ремонту колясок <br />
+      в сервисных центрах Мистер Починкин
+    </h2>
+
+    <ul class="services-list__list desc">
+      <li>Устранение скрипа коляски</li>
+      <li>Замена колес</li>
+      <li>Замена покрышки 10 дюймов</li>
+      <li>Замена покрышки 12 дюймов</li>
+      <li>Замена покрышки 14 дюймов</li>
+      <li>Замена камеры 10 дюймов</li>
+      <li>Замена камеры 12 и 14 дюймов</li>
+      <li>Замена подшипников, втулок</li>
+      <li>Замена регуляторов ручек</li>
+      <li>Замена механизмов регулятора подножки</li>
+
+      <li>Замена механизмов складывания</li>
+      <li>Замена трещетки капора</li>
+      <li>Профилактика коляски</li>
+      <li>Замена оплетки ручки</li>
+      <li>Выравнивание коляски</li>
+      <li>Заклепывания блоков коляски</li>
+      <li>Замена осей, пружин, шпильки колеса</li>
+      <li>Замена шарниров, суставов</li>
+      <li>Ремонт диска колеса, ниппеля, золотника</li>
+      <li>Замена, ремонт ремня безопасности коляски</li>
+
+      <li>Ремонт детского стула, автокресла</li>
+      <li>Замена спинки, ремонт спинки</li>
+      <li>Кнопка, заклепка, клипса на ткани, текстиль</li>
+      <li>Крепление капора, капюшона для коляски</li>
+      <li>Ремонт подвески коляски</li>
+      <li>Ремонт тормоза</li>
+      <li>Сварка коляски и металлических частей рамы</li>
+      <li>Чехол, накидка на ноги для коляски</li>
+      <li>Предпродажная подготовка</li>
+    </ul>
+
+    <div class="services-list__bottom desc">
+      На сайте перечислена лишь малая часть производимых работ. Цены носят
+      ориентировочный характер и могут отличаться, как в большую, так и в
+      меньшую сторону. Конечная стоимость расчитывается индивидуально — в
+      зависимости от сложности работ, наличия запчастей и других факторов. Вы
+      можете прислать фотографию поломки нам на WhatsApp и мастер постарается
+      расчитать её удаленно.
+    </div>
+  </div>
+</section>
+
+        <section class="price price--stroller">
+  <div class="container">
+    <h2 class="title2 price__title">Стоимость услуг на ремонт колясок</h2>
+
+    <ul class="list-reset price__list active">
+      <li class="capture">
+        <span>Диагностика</span>
+        <span>бесплатно</span>
+      </li>
+      <li class="capture">
+        <span>Консультация, подбор запчастей</span>
+        <span>бесплатно</span>
+      </li>
+      <li class="capture">
+        <span>Подкачка колес</span>
+        <span>бесплатно</span>
+      </li>
+      <li class="capture">
+        <span
+          >Профилактика и смазывание коляски, рамы, шасси, устранение скрипа
+          коляски</span
+        >
+        <span>от 400 ₽</span>
+      </li>
+      <li class="capture">
+        <span>Ремонт колес</span>
+        <span>от 150 ₽ <span>(цена запчасти от 300 ₽)</span></span>
+      </li>
+      <li class="capture">
+        <span
+          >Замена, установка колеса, оси, стопорных колец, втулок колеса</span
+        >
+        <span>от 200 ₽ <span>(цена запчасти от 50 руб)</span></span>
+      </li>
+      <li class="capture">
+        <span>Замена блока поворотного колеса</span>
+        <span>от 450 ₽ <span>(цена запчасти от 400 ₽)</span></span>
+      </li>
+      <li class="capture">
+        <span>Замена полувтулки переднего колеса</span>
+        <span>от 150 ₽ <span>(цена запчасти от 100 ₽)</span></span>
+      </li>
+      <li class="capture">
+        <span>Замена подшипников в колесах</span>
+        <span>от 150 ₽ <span>(цена запчасти от 350 ₽)</span></span>
+      </li>
+      <li class="capture">
+        <span>Замена покрышки 8 дюймов</span>
+        <span>от 150 ₽ <span>(цена запчасти от 700 ₽)</span></span>
+      </li>
+      <li class="capture">
+        <span>Замена покрышки 10 дюймов</span>
+        <span>от 150 ₽ <span>(цена запчасти от 700 ₽)</span></span>
+      </li>
+      <li class="capture">
+        <span>Замена покрышки 12 дюймов</span>
+        <span>от 150 ₽ <span>(цена запчасти от 700 ₽)</span></span>
+      </li>
+      <li class="capture">
+        <span>Замена покрышки 14 дюймов</span>
+        <span>от 150 ₽ <span>(цена запчасти от 700 ₽)</span></span>
+      </li>
+    </ul>
+
+    <div class="price__bottom">
+      <a href="#" class="price__link">Весь прейскурант</a>
+    </div>
+  </div>
+</section>
+ <section class="testi">
+  <div class="container">
+    <h2 class="testi__title title2">Отзывы наших клиентов</h2>
+    <div class="testi__slider-tabs swiper">
+      <div class="testi__tabs swiper-wrapper">
+        <div class="testi__tab swiper-slide active" data-tab="all">Все 4.8</div>
+        <div class="testi__tab swiper-slide" data-tab="flamp">
+          <img src="./img/testi/flamp.svg" alt="" />
+          5.0
+        </div>
+        <div class="testi__tab swiper-slide" data-tab="2gis">
+          <img src="./img/testi/2gis.webp" alt="" />
+          4.8
+        </div>
+        <div class="testi__tab swiper-slide" data-tab="yandex">
+          <img src="./img/testi/yandex.webp" alt="" />
+          5.0
+        </div>
+        <div class="testi__tab swiper-slide" data-tab="yell">
+          <img src="./img/testi/yell.webp" alt="" />
+          5.0
+        </div>
+        <div class="testi__tab swiper-slide" data-tab="a-serv">
+          <img src="./img/testi/ya-serv.webp" alt="" />
+          5.0
+        </div>
+        <div class="testi__tab swiper-slide" data-tab="profi">
+          <img src="./img/testi/profi.webp" alt="" />
+          5.0
+        </div>
+        <div class="testi__tab swiper-slide" data-tab="avito">
+          <img src="./img/testi/avito.webp" alt="" />
+          5.0
+        </div>
+      </div>
+    </div>
+    <div class="testi__wrapper">
+      <div class="testi__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="testi__card swiper-slide testimonial" data-testi="flamp">
+            <div class="testimonial__header">
+              <div class="testimonial__platform">
+                <img src="./img/testi/flamp.svg" alt="" />
+              </div>
+              <div class="testimonial__raiting">
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+              </div>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__text">
+                Столкнулся с проблемой колеса на детской коляске. За 10 минут
+                устранили эту проблему. Мальчишки вежливые, мастера своего дела,
+                цены приемлемые.
+              </div>
+              <span>Читать полностью</span>
+            </div>
+            <div class="testimonial__bottom">Сергей М.</div>
+          </div>
+          <div class="swiper-slide testi__card testimonial" data-testi="yandex">
+            <div class="testimonial__header">
+              <div class="testimonial__platform">
+                <img src="./img/testi/yandex.webp" alt="" />
+              </div>
+              <div class="testimonial__raiting">
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+              </div>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__text">
+                Спасибо за вашу работу — очень быстро заменили нам покрышку на
+                колесе и подшипники в другом колесе. Вышло весьма бюджетно.
+              </div>
+              <span>Читать полностью</span>
+            </div>
+            <div class="testimonial__bottom">Сергей М.</div>
+          </div>
+          <div class="testi__card swiper-slide testimonial" data-testi="2gis">
+            <div class="testimonial__header">
+              <div class="testimonial__platform">
+                <img src="./img/testi/2gis.webp" alt="" />
+              </div>
+              <div class="testimonial__raiting">
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+                <img src="./img/testi/star.svg" alt="" />
+              </div>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__text">
+                Сказать что я приятно удивлен, ничего не сказать! Мою проблему
+                решили за 10 минут и цены оказались очень демократичными. Сервис
+                на высшем уровне.
+              </div>
+              <span>Читать полностью</span>
+            </div>
+            <div class="testimonial__bottom">Сергей М.</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="testi__control control-btn control-btn--prev testi__control--prev"
+      >
+        <svg
+          width="10"
+          height="16"
+          viewBox="0 0 10 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+          />
+        </svg>
+      </div>
+      <div
+        class="testi__control control-btn control-btn--next testi__control--next"
+      >
+        <svg
+          width="10"
+          height="16"
+          viewBox="0 0 10 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div class="pagination testi__pagination"></div>
+  </div>
+</section>
+
+        <section class="partners">
+  <div class="container">
+    <div class="partners__title title2">Наши партнеры</div>
+    <div class="partners__wrapper">
+      <div class="partners__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="partners__item">
+              <img src="./img/partners/tako.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partners__item">
+              <img src="./img/partners/roan.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partners__item">
+              <img src="./img/partners/riko.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partners__item">
+              <img src="./img/partners/hoordi.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partners__item">
+              <img src="./img/partners/lonex.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partners__item">
+              <img src="./img/partners/joolz.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partners__item">
+              <img src="./img/partners/tako.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="partners__control control-btn control-btn--prev partners__control--prev"
+      >
+        <svg
+          width="10"
+          height="16"
+          viewBox="0 0 10 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+          />
+        </svg>
+      </div>
+      <div
+        class="partners__control control-btn control-btn--next partners__control--next"
+      >
+        <svg
+          width="10"
+          height="16"
+          viewBox="0 0 10 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="contacts" id="contacts-map">
+  <div class="container">
+    <h2 class="title2 contacts__title">Адреса наших сервисов</h2>
+    <div class="contacts__row">
+      <div class="contacts__tab" data-contacts-tab="list">Списком</div>
+      <div class="contacts__tab active" data-contacts-tab="map">На карте</div>
+      <div class="contacts__form">
+        <input
+          type="text"
+          class="contacts__input"
+          id="suggest"
+          placeholder="Поиск по адресу"
+        />
+        <button class="btn-reset contacts__search">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.62499 1.8335C8.38253 1.8336 7.15811 2.13083 6.05389 2.70038C4.94967 3.26993 3.99766 4.09529 3.27729 5.1076C2.55692 6.11991 2.08908 7.28981 1.9128 8.5197C1.73653 9.74959 1.85693 11.0038 2.26395 12.1777C2.67098 13.3516 3.35283 14.4111 4.25262 15.2679C5.15241 16.1247 6.24405 16.7539 7.43646 17.103C8.62887 17.4521 9.88747 17.5109 11.1073 17.2747C12.327 17.0384 13.4726 16.5139 14.4485 15.7448L17.7962 19.0925C17.969 19.2595 18.2006 19.3519 18.4409 19.3498C18.6813 19.3477 18.9112 19.2513 19.0812 19.0813C19.2511 18.9114 19.3475 18.6815 19.3496 18.4411C19.3517 18.2008 19.2593 17.9692 19.0923 17.7963L15.7447 14.4487C16.6503 13.2997 17.2142 11.919 17.3718 10.4646C17.5294 9.01013 17.2744 7.54068 16.6359 6.22442C15.9973 4.90815 15.0011 3.79824 13.7613 3.02171C12.5214 2.24518 11.088 1.8334 9.62499 1.8335ZM3.66665 9.62516C3.66665 8.04491 4.29441 6.52939 5.41181 5.41198C6.52921 4.29458 8.04474 3.66683 9.62499 3.66683C11.2052 3.66683 12.7208 4.29458 13.8382 5.41198C14.9556 6.52939 15.5833 8.04491 15.5833 9.62516C15.5833 11.2054 14.9556 12.7209 13.8382 13.8383C12.7208 14.9557 11.2052 15.5835 9.62499 15.5835C8.04474 15.5835 6.52921 14.9557 5.41181 13.8383C4.29441 12.7209 3.66665 11.2054 3.66665 9.62516Z"
+              fill="#8E8E8E"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="controls">
+      <div
+        class="contacts__row contacts__cities contacts__row--30"
+        id="cities"
+      ></div>
+    </div>
+
+    <div class="contacts__content" data-contacts-content="list">
+      <div class="contacts__city">Москва</div>
+      <ul class="contacts__list list-reset">
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">Красноармейская, 23</div>
+            <div class="contacts-item__metro">метро Аэропорт</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Пн-Пт: 11:00 — 20:00</span>
+            <span>Сб-Вс: 11:00 — 16:00</span>
+            <a href="tel:+74950235544">+7 495 023-55-44</a>
+          </div>
+        </li>
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">Луговой проезд, 11</div>
+            <div class="contacts-item__metro">метро Марьино</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Пн-Пт: 9:00 — 20:00</span>
+            <span>Сб-Вс: 11:00 — 17:00</span>
+            <a href="tel:+74953247676"> +7 (495) 324-76-76</a>
+            <a href="tel:+74953247676"> +7 (495) 324-76-76</a>
+            <small>Whatsapp для фото поломок</small>
+          </div>
+        </li>
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">Миклухо-Маклая, 34</div>
+            <div class="contacts-item__metro">метро Беляево</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Пн-Пт: 11:00 — 20:00</span>
+            <span>Сб-Вс: 11:00 — 16:00</span>
+            <a href="tel:+74950325151">+7 495 032-51-51</a>
+          </div>
+        </li>
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">
+              Амундсена, 3 (корп. 2, подъезд 3, домофон 2В)
+            </div>
+            <div class="contacts-item__metro">метро Свиблово</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Вт-Вс: 11-00 — 19-30</span>
+            <span> Пн — выходной</span>
+            <a href="tel:+79257625127">+7 925 762-51-27</a>
+          </div>
+        </li>
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">Студенческая, 32</div>
+            <div class="contacts-item__metro">метро Студенческая</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Пн-Пт: 9:00 — 20:00</span>
+            <span>Сб-Вс: 11:00 — 17:00</span>
+            <a href="tel:+79037242392">+7 903 724-23-92</a>
+            <small>работает WhatsApp</small>
+          </div>
+        </li>
+        <li
+          class="contacts__item contacts-item"
+          data-coords="[55.831903, 37.411961]"
+        >
+          <div class="contacts-item__info">
+            <div class="contacts-item__title">
+              Рубцовская набережная, 2 (корп. 3)
+            </div>
+            <div class="contacts-item__metro">метро Электрозаводская</div>
+          </div>
+          <div class="contacts-item__tt desc">
+            <span>Пн-Пт: 11:00 — 20:00</span>
+            <span>Сб-Вс: 10:00 — 17:00</span>
+            <a href="tel:+74953241616">+7 495 324-16-16</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contacts__content active" data-contacts-content="map">
+      <div id="map"></div>
+    </div>
+  </div>
+</section>
+
+<!-- <script type="module">
+  let myMap;
+  init();
+  // Инициализация карты
+  async function init() {
+    await ymaps3.ready;
+
+    const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = ymaps3;
+
+    // Import the package to add a default marker
+    const { YMapDefaultMarker } = await ymaps3.import(
+      "@yandex/ymaps3-default-ui-theme"
+    );
+
+    myMap = new YMap(
+      document.getElementById("map"),
+      {
+        location: {
+          center: [37.588144, 55.733842],
+          zoom: 10,
+        },
+      },
+      [new YMapDefaultSchemeLayer({}), new YMapDefaultFeaturesLayer({})]
+    );
+    // Массив для хранения меток
+    const placemarks = [
+      {
+        coords: [55.7558, 37.6173],
+        hint: "Филиал СДЕК 1",
+        balloon: "Адрес: Филиал 1",
+      },
+      {
+        coords: [55.761, 37.6173],
+        hint: "Филиал СДЕК 2",
+        balloon: "Адрес: Филиал 2",
+      },
+    ];
+
+    // Создаем метки и добавляем их на карту
+    placemarks.forEach(function (place) {
+      const marker = new YMapDefaultMarker({
+        coordinates: place.coords,
+        title: "africa",
+      });
+      myMap.addChild(marker);
+    });
+
+    // Обработчик клика по заведению в списке
+    // document.querySelectorAll(".place").forEach(function (element) {
+    //   element.addEventListener("click", function () {
+    //     const coords = JSON.parse(this.getAttribute("data-coords"));
+    //     myMap.setCenter(coords, 15); // Увеличение уровня зума и центрирование карты
+    //   });
+    // });
+
+    // // Обработчик клика по кнопкам городов
+    // document.querySelectorAll(".city-button").forEach(function (button) {
+    //   button.addEventListener("click", function () {
+    //     const cityCoords = JSON.parse(this.getAttribute("data-coords"));
+    //     myMap.setCenter(cityCoords, 12); // Установить уровень зума
+
+    //     // Меняем цвет кнопки
+    //     document
+    //       .querySelectorAll(".city-button")
+    //       .forEach((btn) => btn.classList.remove("active"));
+    //     this.classList.add("active");
+    //   });
+    // });
+  }
+</script> -->
+
+<!-- <script>
+  ymaps.ready(init);
+
+  let myMap;
+
+  const placemarks = [
+    {
+      coords: [55.831903, 37.411961],
+      hint: "Филиал СДЕК 1",
+      address: "Адрес: Филиал 1",
+    },
+    {
+      coords: [55.763338, 37.565466],
+      hint: "Филиал СДЕК 2",
+      address: "Адрес: Филиал 2",
+    },
+
+    {
+      coords: [55.744522, 37.616378],
+      hint: "Филиал СДЕК 4",
+      address: "Адрес: Филиал 4",
+    },
+    {
+      coords: [55.780898, 37.642889],
+      hint: "Филиал СДЕК 5",
+      address: "Адрес: Филиал 5",
+    },
+    {
+      coords: [55.793559, 37.435983],
+      hint: "Филиал СДЕК 6",
+      address: "Адрес: Филиал 6",
+    },
+  ];
+
+  var find = function (arr, find) {
+    return arr.filter(function (value) {
+      return (
+        (value.address + "").toLowerCase().indexOf(find.toLowerCase()) != -1
+      );
+    });
+  };
+  var myProvider = {
+    suggest: function (request, options) {
+      console.log(request);
+      var res = find(placemarks, request),
+        arrayResult = [],
+        results = Math.min(options.results, res.length);
+      for (var i = 0; i < results; i++) {
+        arrayResult.push({
+          displayName: res[i].hint,
+          value: res[i].address,
+        });
+      }
+      return ymaps.vow.resolve(arrayResult);
+    },
+  };
+
+  function init() {
+    // Создаём экземпляр карты
+    myMap = new ymaps.Map("map", {
+      center: [55.7558, 37.6173], // Начальные координаты (Москва)
+      zoom: 10,
+    });
+
+    var suggestView1 = new ymaps.SuggestView("suggest", {
+      provider: myProvider,
+      results: 3,
+    });
+
+    objectManager = new ymaps.ObjectManager({
+      // Чтобы метки начали кластеризоваться, выставляем опцию.
+      clusterize: true,
+      geoObjectOpenBalloonOnClick: false,
+      clusterOpenBalloonOnClick: false,
+    });
+
+    // Массив для хранения меток
+
+    const features = placemarks.map((shop, index) => {
+      return {
+        type: "Feature",
+        id: index,
+        geometry: {
+          type: "Point",
+          coordinates: shop.coords,
+        },
+        properties: {
+          balloonContent: `<strong>${shop.hint}</strong><br>${shop.balloon}`,
+          id: index, // Добавить ID для работы с кликами
+        },
+      };
+    });
+
+    objectManager.add({
+      type: "FeatureCollection",
+      features: features,
+    });
+    myMap.geoObjects.add(objectManager);
+    // Обработчик клика по заведению в списке
+    document.querySelectorAll(".place").forEach(function (element) {
+      element.addEventListener("click", function () {
+        const coords = JSON.parse(this.getAttribute("data-coords"));
+        myMap.setCenter(coords, 15); // Увеличение уровня зума и центрирование карты
+      });
+    });
+
+    const cityButtons = document.querySelectorAll(".contacts__city-button");
+    // // Обработчик клика по кнопкам городов
+    const clearActive = () => {
+      cityButtons.forEach((btn) => btn.classList.remove("active"));
+    };
+
+    cityButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        clearActive();
+        button.classList.add("active");
+
+        const cityCoords = JSON.parse(this.getAttribute("data-coords"));
+        myMap.setCenter(cityCoords, 12); // Установить уровень зума
+
+        // Меняем цвет кнопки
+        document
+          .querySelectorAll(".city-button")
+          .forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
+      });
+    });
+  }
+</script> -->
+ <section class="cta">
+  <div class="container">
+    <div class="cta__container">
+      <h2 class="title2 title2--white cta__title">
+        Оставьте онлайн заявку на ремонт
+      </h2>
+      <p class="capture capture--white cta__capture">
+        И мастер свяжется с вами для уточнения стоимости и деталей работы
+      </p>
+
+      <form action="#" class="form cta__form">
+        <div class="form__grid">
+          <label class="form__label">
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Ваше имя*"
+              name="Имя клиента"
+            />
+          </label>
+          <label class="form__label">
+            <input
+              type="tel"
+              class="form__input"
+              placeholder="Ваш номер телефона*"
+              name="Телефон"
+            />
+          </label>
+          <label class="form__label">
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Ваш город"
+              name="Город"
+            />
+          </label>
+          <label class="form__label">
+            <input
+              type="email"
+              class="form__input"
+              placeholder="Ваш e-mail"
+              name="E-mail"
+            />
+          </label>
+          <label class="form__label">
+            <textarea
+              type="text"
+              class="form__input form__input--area"
+              placeholder="Комментарий"
+              name="Комментарий"
+            ></textarea>
+          </label>
+        </div>
+        <small class="form__extra">* поле обязательное для заполнения</small>
+        <small class="form__extra form__extra--agree">
+          Нажимая на кнопку «Отправить», Вы принимаете условия политики
+          конфиденциальности в отношении обработки персональных данных.
+        </small>
+
+        <button class="btn btn--reverse btn-reset form__btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <div class="footer__col">
+        <div class="footer__cont">
+          <span>Единый бесплатный телефон</span>
+          <a class="footer__capture capture" href="tel:88002004434"
+            >8 800 200 44 34</a
+          >
+        </div>
+        <div class="footer__cont">
+          <span>Многоканальный телефон</span>
+          <a class="footer__capture capture" href="tel:+74951824343 "
+            >+7 495 182-43-43</a
+          >
+        </div>
+        <div class="footer__cont">
+          <span>Электронная почта</span>
+          <a class="footer__capture capture" href="mailto:info@mr-pochinkin.ru"
+            >info@mr-pochinkin.ru</a
+          >
+        </div>
+        <a href="#" class="footer__link"> Контакты и адреса мастерских </a>
+      </div>
+      <div class="footer__col">
+        <nav class="footer__nav f-nav">
+          <div class="f-nav__capture capture">Каталог</div>
+          <ul class="list-reset f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт чемоданов</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт детских колясок</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт очков</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт электросамокатов</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <nav class="footer__nav f-nav">
+          <div class="f-nav__capture capture">Информация</div>
+          <ul class="list-reset f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Услуги</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Франшиза</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">О нас</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <button class="btn-reset btn footer__btn">Перезвоните мне</button>
+        <div class="footer__socials">
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#tg"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <a href="#header" class="footer__up">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 5L18 11M12 5L6 11M12 5V19"
+                stroke="#8E8E8E"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

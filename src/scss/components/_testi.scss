@@ -1,0 +1,113 @@
+.testi {
+  margin-bottom: 10rem;
+  &__title {
+    margin-bottom: 5rem;
+  }
+  &__wrapper {
+    position: relative;
+    margin-bottom: 3rem;
+  }
+  &__tabs {
+    display: flex;
+    align-items: center;
+  }
+  &__slider-tabs {
+    margin-bottom: 3rem;
+  }
+  &__tab {
+    width: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    color: #303030;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
+    &:first-child {
+      padding: 1rem 3rem;
+    }
+    img {
+      display: block;
+      height: 2.2rem;
+      width: auto;
+      object-fit: contain;
+    }
+
+    &.active {
+      cursor: default;
+      pointer-events: none;
+      background-color: #ebf5e8;
+    }
+  }
+}
+
+.testimonial {
+  padding: 3rem;
+  border-radius: 0.8rem;
+  background: #f6f7f8;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 3rem;
+  }
+
+  &__platform {
+    height: 2.2rem;
+    width: auto;
+    max-width: 13rem;
+
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+  &__raiting {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    background-color: #ebf5e8;
+    img {
+      display: block;
+      width: 1.4rem;
+      height: 1.4rem;
+      flex-shrink: 0;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #454545;
+  }
+
+  &__content {
+    margin-bottom: 3.4rem;
+
+    span {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 1.3rem;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: #2e6be5;
+    }
+  }
+
+  &__bottom {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #303030;
+  }
+}

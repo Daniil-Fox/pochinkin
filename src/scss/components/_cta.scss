@@ -1,0 +1,49 @@
+.cta {
+  margin-bottom: 10rem;
+  &__container {
+    padding: 6rem 10rem;
+    background-image: url("./../img/cta.webp"),
+      linear-gradient(136deg, #cd1e38 0%, #971529 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1.2rem;
+  }
+
+  &__title {
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+  }
+
+  &__capture {
+    margin-bottom: 3rem;
+  }
+}
+
+.cta--test {
+  .cta__container {
+    background-image: url("./../img/cta-test.webp"),
+      linear-gradient(180deg, #e6e6e6 0%, #e5e5e3 100%);
+    background-size: auto 100%, cover;
+    background-position: right;
+  }
+  .cta__title,
+  .form__extra {
+    color: #303030;
+  }
+  .form__extra--agree {
+    color: #8e8e8e;
+  }
+  .cta__capture {
+    color: #b01c32;
+  }
+  .cta__content {
+    max-width: 51rem;
+  }
+  .form__grid {
+    grid-template-columns: 1fr;
+  }
+  .form__label:last-child {
+    grid-column: 1 span;
+  }
+}

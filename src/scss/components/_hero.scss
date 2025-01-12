@@ -1,0 +1,81 @@
+.hero {
+  padding-bottom: 3rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 1.2rem;
+    overflow: hidden;
+
+    background: linear-gradient(136deg, #f6f7f8 0%, #e8e9ec 100%);
+
+    &--red {
+      background: linear-gradient(180deg, #ce1e38 0%, #a3192e 100%);
+
+      .hero__right {
+        background: linear-gradient(136deg, #f6f7f8 0%, #e8e9ec 100%);
+      }
+      .hero__title,
+      .hero__subtitle,
+      .hero__desc {
+        color: #fff;
+      }
+    }
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__right {
+    position: relative;
+    background: linear-gradient(180deg, #ce1e38 0%, #a3192e 100%);
+  }
+  &__left {
+    padding: 14.5rem 5rem;
+  }
+  &__subtitle {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #303030;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: #303030;
+  }
+  &__desc {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #303030;
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transform: scale(1.1);
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__pagination {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 3;
+    width: auto !important;
+  }
+}

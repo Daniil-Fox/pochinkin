@@ -1,0 +1,40 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/nav";
+@import "./components/hero";
+@import "./components/partners";
+@import "./components/desc";
+@import "./components/avail";
+@import "./components/reason";
+@import "./components/r-item";
+@import "./components/dets";
+@import "./components/banner";
+@import "./components/benefits";
+@import "./components/franch";
+@import "./components/act";
+@import "./components/welcome";
+@import "./components/before-after";
+@import "./components/ready";
+@import "./components/testi";
+@import "./components/price";
+@import "./components/cta";
+@import "./components/form";
+@import "./components/footer";
+@import "./components/breadcrumbs";
+@import "./components/service-hero";
+@import "./components/brands";
+@import "./components/our-benefits";
+@import "./components/completed";
+@import "./components/services-list";
+@import "./components/quiz";
+@import "./components/contacts-sec";
+@import "./components/service-desc";
+@import "./components/possible";
+@import "./components/profit";
+@import "./components/contacts-main";

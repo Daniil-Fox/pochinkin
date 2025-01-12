@@ -1,0 +1,34 @@
+.partners {
+  margin-bottom: 10rem;
+  &__title {
+    margin-bottom: 5rem;
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9rem;
+    padding: 1.4rem;
+    border: 1px solid #f6f7f8;
+    border-radius: 0.8rem;
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+
+      user-select: none;
+    }
+  }
+
+  &__pagination {
+    width: 100%;
+    margin-top: 2rem;
+    &:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
+  }
+}

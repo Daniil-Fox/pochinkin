@@ -1,0 +1,55 @@
+.contacts-main {
+  margin-bottom: 10rem;
+  &__title {
+    font-weight: 700;
+    margin-bottom: 5.2rem;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+  }
+}
+
+.contactsM-item {
+  padding: 3rem;
+  border-radius: 1.2rem;
+  background-color: #f6f7f8;
+
+  &__block {
+    span {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #8e8e8e;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &__desc {
+    line-height: 1.4;
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__capture {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #2a8ce3;
+  }
+  &__tel {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #303030;
+
+    &--whatsapp {
+      color: #2a8ce3;
+    }
+  }
+}

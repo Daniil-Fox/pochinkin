@@ -1,0 +1,120 @@
+.contacts {
+  margin-bottom: 10rem;
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 3rem;
+    gap: 2rem;
+    &--30 {
+      gap: 3rem;
+    }
+  }
+
+  &__tab {
+    padding: 1.2rem 2.8rem;
+    color: #8e8e8e;
+    border: 1px solid currentColor;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.6rem;
+
+    &.active {
+      cursor: default;
+      pointer-events: none;
+      color: #b01c32;
+    }
+  }
+  &__content {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
+  &__city-button {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 2rem;
+    color: #303030;
+
+    &.active {
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: #b01c32;
+    }
+  }
+  &__form {
+    position: relative;
+  }
+  &__input {
+    display: block;
+    width: 30rem;
+    background: #f6f7f8;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    padding: 1.2rem;
+  }
+  &__search {
+    position: absolute;
+    top: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    transform: translateY(-50%);
+    right: 1.2rem;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__city {
+    margin-bottom: 2rem;
+
+    font-weight: 600;
+    font-size: 3.6rem;
+    color: #b01c32;
+  }
+}
+
+.contacts-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f6f7f8;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #303030;
+  }
+  &__metro {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #8e8e8e;
+  }
+  &__tt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    font-weight: 600;
+    a {
+      color: inherit;
+    }
+
+    small {
+      font-size: 1.4rem;
+      color: #8e8e8e;
+    }
+  }
+}

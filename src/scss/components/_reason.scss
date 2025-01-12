@@ -1,0 +1,23 @@
+.reason {
+  margin-bottom: 10rem;
+  &__title {
+    margin-bottom: 4rem;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 2.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__capture {
+    margin-bottom: 2rem;
+  }
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+}

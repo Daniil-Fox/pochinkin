@@ -1,0 +1,45 @@
+.description {
+  margin-bottom: 5rem;
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__desc {
+    margin-bottom: 3rem;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+  }
+
+  &__item {
+    padding: 2.7rem;
+    background: #f6f7f8;
+    border-radius: 0.8rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.desc-item {
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__content {
+    font-weight: 600;
+    line-height: 137%;
+  }
+}

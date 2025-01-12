@@ -1,0 +1,35 @@
+.breadcrumbs {
+  padding: 2.5rem 0;
+  span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    a {
+      color: inherit;
+    }
+    span {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: #8e8e8e;
+      &:not(:last-child) {
+        color: #303030;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 1.5rem;
+          width: 0.8rem;
+
+          background-image: url("./../img/arr-right.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+}

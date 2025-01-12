@@ -1,0 +1,50 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  &__logo {
+    display: block;
+    width: 15rem;
+    height: 8rem;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__tel {
+    display: flex;
+    gap: 1rem;
+    span {
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: #8e8e8e;
+    }
+
+    a {
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: #303030;
+    }
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  }
+  &__right {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__nav {
+    padding: 1.7rem 0;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+  }
+}

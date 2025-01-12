@@ -1,0 +1,114 @@
+.completed {
+  margin-bottom: 10rem;
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+  &__navigation {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    background-color: #fff;
+  }
+  &__control {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border: 1px solid currentColor;
+    &--prev {
+      transform: rotateZ(180deg);
+    }
+  }
+  &__slider {
+    margin-bottom: 2rem;
+  }
+}
+
+.comp-item {
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3.2rem;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: #303030;
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+  }
+  &__capture {
+    margin-bottom: 2rem;
+  }
+  &__steps {
+    // border-left: 1px solid #e8e9ec;
+    margin-left: 0.5rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 0;
+      display: block;
+      height: calc(100% - 1.6rem);
+      transform: translateY(-50%);
+      width: 1px;
+      background-color: #e8e9ec;
+    }
+    li {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+
+      padding-left: 1.5rem;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 162%;
+      color: #454545;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0rem;
+        left: 0;
+        z-index: 1;
+        display: block;
+        transform: translate(-50%, 60%);
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: 100%;
+        background-color: #b01c32;
+      }
+
+      &:not(:last-child) {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}

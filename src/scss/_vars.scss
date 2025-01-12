@@ -1,0 +1,10 @@
+
+:root {
+  --font-family: "Vela Sans", sans-serif;
+  --second-family: "Arial", sans-serif;
+  --content-width: 120rem;
+  --container-offset: 4rem;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --light-color: #fff;
+}

@@ -1,0 +1,11 @@
+.dets {
+  margin-bottom: 10rem;
+  &__title {
+    margin-bottom: 3rem;
+  }
+  &__desc {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+}
