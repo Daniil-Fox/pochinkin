@@ -1,0 +1,111 @@
+<div class="container">
+  <div class="breadcrumbs">
+    <span>
+      <span>
+        <a href="./">Главная</a>
+      </span>
+      <span>
+        <a href="./">Контакты</a>
+      </span>
+      <span> м. Аэропорт, ул. Красноармейская, 23  </span>
+    </span>
+  </div>
+</div>
+<section class="cont-sing-hero">
+  <div class="container">
+    <div class="cont-sing-hero__top">
+      <a
+        href="./contacts.html"
+        class="cont-sing-hero__back btn btn--gray btn-reset"
+      >
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 22 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.58398 11L10.084 5.5M4.58398 11L10.084 16.5M4.58398 11L17.4173 11"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        Вернуться к контактам
+      </a>
+    </div>
+    <h1 class="cont-sing-hero__title title2">
+      м.Аэропорт, ул. Красноармейская, 23 
+    </h1>
+    <div class="cont-sing-hero__container">
+      <div class="cont-sing-hero__left">
+        <div class="cont-sing-hero__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide cont-sing-hero__slide">
+              <img src="./img/contacts-single/01.webp" alt="" />
+            </div>
+            <div class="swiper-slide cont-sing-hero__slide">
+              <img src="./img/contacts-single/01.webp" alt="" />
+            </div>
+            <div class="swiper-slide cont-sing-hero__slide">
+              <img src="./img/contacts-single/01.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="cont-sing-hero__pagination"></div>
+      </div>
+      <div class="cont-sing-hero__content">
+        <div class="cont-sing-hero__row">
+          <div class="cont-sing-hero__block">
+            <div class="capture cont-sing-hero__capture">Режим работы</div>
+            <p class="desc">Пн-Пт: 11:00 - 20:00</p>
+            <p class="desc">Сб-Вс: 11:00 - 16:00</p>
+          </div>
+          <div class="cont-sing-hero__block">
+            <div class="capture cont-sing-hero__capture">Телефон</div>
+            <p class="desc">
+              <a href="tel:+7 (495) 023-55-44">+7 (495) 023-55-44</a>
+            </p>
+          </div>
+        </div>
+        <div class="cont-sing-hero__text">
+          <div class="cont-sing-hero__capture capture">Как добраться</div>
+          <p class="desc" data-simplebar>
+            Последний вагон из центра, затем повернуть налево и по 1-ой
+            Аэропортовской улице идти в сторону Красноармейской улицы, напротив
+            магазина Пятёрочка увидите дом 23, огражденный забором, на калитке с
+            домофоном нажимайте Ремонт колясок и проходите в левый крайний
+            подъезд.
+          </p>
+        </div>
+        <div class="cont-sing-hero__services">
+          <div class="cont-sing-hero__capture capture">Услуги</div>
+          <ul class="cont-sing-hero__list list-reset">
+            <li>Ремонт детских колясок</li>
+            <li>Ремонт чемоданов</li>
+            <li>Ремонт очков</li>
+            <li>Ремонт электросамокатов</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cont-map">
+  <div class="container">
+    <div class="cont-map__map" id="cont-map"></div>
+  </div>
+</section>
+<script type="text/javascript">
+  ymaps.ready(init);
+  function init() {
+    var myMap = new ymaps.Map("cont-map", {
+      center: [55.76, 37.64],
+      zoom: 15,
+    });
+
+    var myPlacemark = new ymaps.Placemark([55.76, 37.64]);
+    myMap.geoObjects.add(myPlacemark);
+  }
+</script>

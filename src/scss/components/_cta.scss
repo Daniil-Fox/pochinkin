@@ -47,3 +47,51 @@
     grid-column: 1 span;
   }
 }
+
+.cta--fransh {
+  .cta__container {
+    background-image: url("./../img/man2.webp"),
+      linear-gradient(180deg, #cc1e38 0%, #a4182d 100%);
+    background-size: auto calc(100% - 2rem), cover;
+    background-position: calc(100% - 100px) bottom, center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: 0;
+      width: 71rem;
+      height: 19rem;
+      background-image: url("./../img/wave.svg");
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+  }
+  .cta__title,
+  .form__extra {
+    color: #fff;
+    max-width: 52rem;
+  }
+  .form__extra--agree {
+    color: #fff;
+    font-weight: 400;
+  }
+  .cta__capture {
+    color: #fff;
+  }
+  .cta__content {
+    max-width: 70rem;
+    position: relative;
+    z-index: 2;
+  }
+  .form__grid {
+    max-width: 50rem;
+    grid-template-columns: 1fr;
+  }
+  .form__label:last-child {
+    grid-column: 1 span;
+  }
+}

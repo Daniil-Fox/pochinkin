@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Починкин</title>
+  <link
+    rel="preload"
+    href="fonts/VelaSans-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/VelaSans-Bold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script
+    src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=221cbec3-01c0-4b1a-8417-d7d65e719c35&suggest_apikey=3127f73d-e47f-4cde-a746-7e4846b2b8e2"
+    type="text/javascript"
+  ></script>
+  <script defer src="./yandex-map.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header" id="header">
+  <div class="container">
+    <div class="header__container">
+      <div class="header__left">
+        <a href="./" class="header__logo">
+          <img src="./img/logo.webp" alt="" />
+        </a>
+
+        <div class="header__tel">
+          <span>Единый бесплатный телефон</span>
+          <a href="tel:88002004434">8 800 200 44 34</a>
+        </div>
+      </div>
+
+      <div class="header__right">
+        <a href="./contacts.html" class="btn-reset btn btn--stroke header__btn">
+          Контакты и адреса мастерских
+        </a>
+        <button class="btn-reset btn header__btn modal-btn">
+          Перезвоните мне
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header__nav">
+    <div class="container">
+      <nav class="nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item"><a href="./" class="nav__link">Главная</a></li>
+          <li class="nav__item">
+            <a href="./service.html" class="nav__link">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="./fransh.html" class="nav__link">Сотрудничество</a>
+          </li>
+          <li class="nav__item">
+            <a href="./fransh.html" class="nav__link">Франшиза</a>
+          </li>
+          <li class="nav__item">
+            <a href="./contacts.html" class="nav__link">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="./about.html" class="nav__link">О нас</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="modal modal-form">
+  <div class="modal__body">
+    <div class="modal__close">
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 18 18"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M9 10.75L2.875 16.875C2.64583 17.1042 2.35417 17.2188 2 17.2188C1.64583 17.2188 1.35417 17.1042 1.125 16.875C0.895833 16.6458 0.78125 16.3542 0.78125 16C0.78125 15.6458 0.895833 15.3542 1.125 15.125L7.25 9L1.125 2.875C0.895833 2.64583 0.78125 2.35417 0.78125 2C0.78125 1.64583 0.895833 1.35417 1.125 1.125C1.35417 0.895833 1.64583 0.78125 2 0.78125C2.35417 0.78125 2.64583 0.895833 2.875 1.125L9 7.25L15.125 1.125C15.3542 0.895833 15.6458 0.78125 16 0.78125C16.3542 0.78125 16.6458 0.895833 16.875 1.125C17.1042 1.35417 17.2188 1.64583 17.2188 2C17.2188 2.35417 17.1042 2.64583 16.875 2.875L10.75 9L16.875 15.125C17.1042 15.3542 17.2188 15.6458 17.2188 16C17.2188 16.3542 17.1042 16.6458 16.875 16.875C16.6458 17.1042 16.3542 17.2188 16 17.2188C15.6458 17.2188 15.3542 17.1042 15.125 16.875L9 10.75Z"
+          fill="#8E8E8E"
+        />
+      </svg>
+    </div>
+    <div class="modal__title">Оставьте заявку на ремонт</div>
+    <form action="#" class="form modal__form">
+      <label for="#" class="form__label">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="Ваше имя*"
+          name="Имя"
+        />
+      </label>
+      <label for="#" class="form__label">
+        <input
+          type="tel"
+          class="form__input"
+          placeholder="Ваш номер телефона*"
+          name="
+        Телефон"
+        />
+      </label>
+      <label for="#" class="form__label">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="Что нужно починить?"
+          name="Что нужно починить"
+        />
+      </label>
+      <div class="modal__info">
+        <small>* поле обязательное для заполнения</small>
+        <small>
+          Нажимая на кнопку «Отправить», Вы принимаете условия
+          <a href="#">политики конфиденциальности</a> в отношении обработки
+          персональных данных.
+        </small>
+      </div>
+
+      <button class="btn-reset btn modal__btn">Отправить</button>
+    </form>
+  </div>
+</div>
+
+      <main class="main">
+        <div class="container">
+  <div class="breadcrumbs">
+    <span>
+      <span>
+        <a href="#">Главная</a>
+      </span>
+      <span>
+        <a href="#">Сотрудничество</a>
+      </span>
+      <span>Франшиза</span>
+    </span>
+  </div>
+</div>
+<section class="hero hero--fransh">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero__container">
+              <div class="hero__left">
+                <h1 class="hero__title">Приглашаем к сотрудничеству</h1>
+                <p class="hero__desc">
+                  Поможем открыть мастерскую Мистер Починкин по франшизе в Вашем
+                  городе!
+                </p>
+                <button class="btn-reset btn">Оставить заявку</button>
+              </div>
+              <div class="hero__right">
+                <div class="hero__img">
+                  <img src="./img/man.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="hero__pagination pagination swiper-pagination"></ul>
+      </div>
+      <div
+        class="hero__control control-btn control-btn--prev hero__control--prev"
+      >
+        <svg
+          width="10"
+          height="16"
+          viewBox="0 0 10 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+          />
+        </svg>
+      </div>
+      <div
+        class="hero__control control-btn control-btn--next hero__control--next"
+      >
+        <svg
+          width="10"
+          height="16"
+          viewBox="0 0 10 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="franch">
+  <div class="container">
+    <h2 class="title2 franch__title">Франшиза мастерской Мистер Починкин</h2>
+    <p class="desc franch__desc">
+      За 10 лет успешной работы сервисных центров Мистер Починкин, нам удалось
+      накопить большой опыт и понимание данного бизнеса. Удалось организовать
+      сеть мастерских в Москве, Санкт-Петербурге, Казани, Калининграде и других
+      городах. Мы всегда рады новым парнерам и готовы поделиться своим опытом.
+      <br />Если вы хотите открыть прибыльный бизнес, с доходом от 150 000
+      рублей и более в месяц — будем рады сотрудничеству! Процесс открытия
+      составляет 1-2 месяца. Как правило окупаемость бизнеса от 3-5 месяцев.
+    </p>
+    <div class="franch__act act">
+      <p class="title3 act__title">Актуальность наших услуг</p>
+
+      <div class="act__items">
+        <div class="act__item act-item">
+          <div class="act-item__icon">
+            <img src="./img/act/01.svg" alt="" />
+          </div>
+          <div class="act-item__content">
+            <div class="act-item__title">Повторные покупки</div>
+            <div class="desc act-item__desc">
+              80% клиентов обращаются<br />за услугами вновь
+            </div>
+          </div>
+        </div>
+        <div class="act__item act-item">
+          <div class="act-item__icon">
+            <img src="./img/act/02.svg" alt="" />
+          </div>
+          <div class="act-item__content">
+            <div class="act-item__title">Ценность</div>
+            <div class="desc act-item__desc">
+              Люди ценят свои вещи и желают <br />
+              подарить им новую жизнь
+            </div>
+          </div>
+        </div>
+        <div class="act__item act-item">
+          <div class="act-item__icon">
+            <img src="./img/act/03.svg" alt="" />
+          </div>
+          <div class="act-item__content">
+            <div class="act-item__title">Эксклюзивность</div>
+            <div class="desc act-item__desc">
+              Клиенты обращаются с ремонтом <br />
+              уникальных и редких вещей
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="act__items">
+        <div class="act__item act-item">
+          <div class="act-item__icon">
+            <img src="./img/act/04.svg" alt="" />
+          </div>
+          <div class="act-item__content">
+            <div class="act-item__title">Стоимость</div>
+            <div class="desc act-item__desc">
+              Чаще всего цена ремонта сильно <br />
+              ниже покупки нового изделия
+            </div>
+          </div>
+        </div>
+        <div class="act__item act-item">
+          <div class="act-item__icon">
+            <img src="./img/act/05.svg" alt="" />
+          </div>
+          <div class="act-item__content">
+            <div class="act-item__title">Изменение рынка</div>
+            <div class="desc act-item__desc">
+              В связи с уходом мировых брендов спрос <br />
+              на ремонт вещей стабильно растет
+            </div>
+          </div>
+        </div>
+        <div class="act__item act-item">
+          <div class="act-item__icon">
+            <img src="./img/act/06.svg" alt="" />
+          </div>
+          <div class="act-item__content">
+            <div class="act-item__title">Доверие</div>
+            <div class="desc act-item__desc">
+              Мистер Починкин имеет <br />
+              отличную репутацию
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="franch__ben f-ben">
+      <p class="f-ben__title title3">Преимущества работы с нами</p>
+      <div class="f-ben__items">
+        <div class="f-ben__item">
+          <div class="f-ben__capture">Централизованные закупки</div>
+          <p class="desc f-ben__desc">
+            Только для наших партнеров цена на расходные материалы со скидкой.
+          </p>
+        </div>
+        <div class="f-ben__item">
+          <div class="f-ben__capture">Обучение</div>
+          <p class="desc f-ben__desc">
+            Четко выстроенный процесс обучения новых мастеров авторской
+            методике.
+          </p>
+        </div>
+        <div class="f-ben__item">
+          <div class="f-ben__capture">Ведение до результата</div>
+          <p class="desc f-ben__desc">
+            Заработок наших партнеров превыше всего.Наша цель — создать сильную
+            сеть.
+          </p>
+        </div>
+        <div class="f-ben__item">
+          <div class="f-ben__capture">Общий чат</div>
+          <p class="desc f-ben__desc">
+            Только для наших франчайзи-партнеров мы предлагаем уникальные цены
+            на закупку запасных частей и расходных материалов
+          </p>
+        </div>
+        <div class="f-ben__item">
+          <div class="f-ben__capture">Поддержка</div>
+          <p class="desc f-ben__desc">
+            Всегда на связи личный менеджер, который поможет решить любой вопрос
+            в работе
+          </p>
+        </div>
+        <div class="f-ben__item">
+          <div class="f-ben__capture">Маркетинг</div>
+          <p class="desc f-ben__desc">
+            Приведем 100 первых клиентов в первый месяц за счет контекстной и
+            таргетированной рекламы
+          </p>
+        </div>
+        <div class="f-ben__item">
+          <div class="f-ben__capture">База знаний</div>
+          <p class="desc f-ben__desc">
+            5 разделов обучения по всем аспектам бизнеса
+          </p>
+        </div>
+        <div class="f-ben__item">
+          <div class="f-ben__capture">Бизнес-процессы</div>
+          <p class="desc f-ben__desc">Отработанные схемы построения бизнеса</p>
+        </div>
+      </div>
+    </div>
+    <div class="franch__bottom">
+      <a href="#" class="franch__btn btn btn-reset"> Подробнее о франшизе </a>
+    </div>
+  </div>
+</section>
+
+        <section class="fransh-map">
+  <div class="container">
+    <h2 class="title2 fransh-map__title">Наши открытые точки</h2>
+
+    <div class="fransh-map__bottom">
+      Планируется открытие в
+      <span>Нижнем Новгороде, Уфе, Самаре, Челябинске, Волгограде.</span>
+      <br />Будьте первыми в своем городе и получите/увеличьте долю рынка!
+    </div>
+  </div>
+  <div class="fransh-map__img">
+    <img src="./img/map-big.svg" alt="" />
+  </div>
+</section>
+
+        <section class="fransh-steps">
+  <div class="container">
+    <h2 class="title2 fransh-steps__title">Этапы запуска франшизы</h2>
+    <div class="desc fransh-steps__content">
+      <ol>
+        <li>
+          Юридическое оформление и оплата. Подписание договора коммерческой
+          концессии, оплата паушального взноса, открытие ИП и расчётного счёта.
+        </li>
+        <li>
+          Поиск помещения, заключение договора аренды, подбор подрядчиков для
+          выполнения работ, согласование и установка вывесок.
+        </li>
+        <li>
+          Бухгалтерия и учет. Подача заявки на эквайринг, покупка, регистрация
+          онлайн-кассы и офисной техники, подключение CRM-системы и складского
+          учёта.
+        </li>
+        <li>
+          Подбор сотрудников. Поиск сотрудников по нашим рекомендациям,
+          проведение Skype-собеседований с кандидатами и официальное
+          трудоустройство.
+        </li>
+        <li>
+          Настройка рекламных кампаний. Настройка контекстной и SMM рекламы,
+          создание аккаунтов, лендингов, подготовка контент-плана и согласование
+          с площадками.
+        </li>
+        <li>
+          Техническое оснащение. Закупка инструментов, формирование базового
+          комплета запчатей и материалов. Обучение франчайзи Пятидневное
+          индивидуальное обучение франчайзи, с передачей пакета франшизы.
+        </li>
+        <li>
+          Открытие сервиса. Техническое открытие сервиса, с выездом нашего
+          специалиста (опционально), запуск интернет маркетинга и оффлайн
+          рекламы.
+        </li>
+      </ol>
+    </div>
+
+    <div class="fransh-steps__bottom">
+      <span
+        >После открытия и запуска сервисного центра, вы получаете поддержку от
+        наших менеджеров и мастеров.</span
+      >
+
+      <br /><br />
+
+      Уточнить подробности по франшизе можно отправив запрос через форму ниже,
+      отправив письмо на мочту
+      <a href="mailto:franshiza@mr-pochinkin.ru">franshiza@mr-pochinkin.ru</a>
+      либо позвонив нам по телефону.
+    </div>
+
+    <div class="fransh-steps__download">
+      Скачайте презентацию и узнайте больше подробностей
+      <a href="#" class="fransh-steps__dw">
+        <img src="./img/pdf.svg" alt="" />
+        Презентация Мистер Починкин
+      </a>
+    </div>
+  </div>
+</section>
+
+        <section class="cta cta--fransh">
+  <div class="container">
+    <div class="cta__container">
+      <div class="cta__content">
+        <h2 class="title2 title2--white cta__title">
+          Узнайте подробности о франшизе
+        </h2>
+        <p class="capture capture--white cta__capture">
+          Мы перезвоним Вам и ответим на все интересующие Вас вопросы!
+        </p>
+
+        <form action="#" class="form cta__form">
+          <div class="form__grid">
+            <label class="form__label">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Ваше имя*"
+                name="Имя клиента"
+              />
+            </label>
+            <label class="form__label">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Ваш город"
+                name="Город"
+              />
+            </label>
+            <label class="form__label">
+              <input
+                type="tel"
+                class="form__input"
+                placeholder="Ваш номер телефона*"
+                name="Телефон"
+              />
+            </label>
+
+            <label class="form__label">
+              <input
+                type="email"
+                class="form__input"
+                placeholder="Ваш e-mail"
+                name="E-mail"
+              />
+            </label>
+          </div>
+          <small class="form__extra">* поле обязательное для заполнения</small>
+          <small class="form__extra form__extra--agree">
+            Нажимая на кнопку «Отправить», Вы принимаете условия политики
+            конфиденциальности в отношении обработки персональных данных.
+          </small>
+
+          <button class="btn btn--reverse btn-reset form__btn">
+            Перезвоните мне
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <div class="footer__col">
+        <div class="footer__cont">
+          <span>Единый бесплатный телефон</span>
+          <a class="footer__capture capture" href="tel:88002004434"
+            >8 800 200 44 34</a
+          >
+        </div>
+        <div class="footer__cont">
+          <span>Многоканальный телефон</span>
+          <a class="footer__capture capture" href="tel:+74951824343 "
+            >+7 495 182-43-43</a
+          >
+        </div>
+        <div class="footer__cont">
+          <span>Электронная почта</span>
+          <a class="footer__capture capture" href="mailto:info@mr-pochinkin.ru"
+            >info@mr-pochinkin.ru</a
+          >
+        </div>
+        <a href="#" class="footer__link"> Контакты и адреса мастерских </a>
+      </div>
+      <div class="footer__col">
+        <nav class="footer__nav f-nav">
+          <div class="f-nav__capture capture">Каталог</div>
+          <ul class="list-reset f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт чемоданов</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт детских колясок</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт очков</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Ремонт электросамокатов</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <nav class="footer__nav f-nav">
+          <div class="f-nav__capture capture">Информация</div>
+          <ul class="list-reset f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Услуги</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Франшиза</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">О нас</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <button class="btn-reset btn footer__btn modal-btn">
+          Перезвоните мне
+        </button>
+        <div class="footer__socials">
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#tg"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <a href="#header" class="footer__up">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 5L18 11M12 5L6 11M12 5V19"
+                stroke="#8E8E8E"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

@@ -43,6 +43,21 @@ new Swiper(".ready__slider", {
     clickable: true,
   },
 });
+
+new Swiper(".video__slider", {
+  slidesPerView: 3,
+  spaceBetween: 24,
+
+  navigation: {
+    prevEl: ".video__control--prev",
+    nextEl: ".video__control--next",
+  },
+  pagination: {
+    el: ".video__pagination",
+    clickable: true,
+  },
+});
+
 const testiTabs = new Swiper(".testi__slider-tabs", {
   slidesPerView: "auto",
   spaceBetween: 20,

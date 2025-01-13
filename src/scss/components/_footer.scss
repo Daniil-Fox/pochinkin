@@ -51,9 +51,13 @@
     padding: 1.3rem;
     border: 1px solid #e8e9ec;
     border-radius: 0.8rem;
-
+    transition: 0.15s ease-in-out;
     svg {
       fill: #8e8e8e;
+    }
+
+    @include hover {
+      transform: translateY(-5px);
     }
   }
   &__btn {
@@ -74,6 +78,10 @@
     border-radius: 0.8rem;
     padding: 1.3rem;
     background-color: #ededed;
+    transition: 0.15s ease-in-out;
+    @include hover {
+      transform: translateY(-5px);
+    }
   }
 }
 

@@ -5,13 +5,13 @@
     grid-template-columns: repeat(2, 1fr);
     border-radius: 1.2rem;
     overflow: hidden;
-
+    min-height: 53rem;
     background: linear-gradient(136deg, #f6f7f8 0%, #e8e9ec 100%);
 
     &--red {
       background: linear-gradient(180deg, #ce1e38 0%, #a3192e 100%);
 
-      .hero__right {
+      .hero__img {
         background: linear-gradient(136deg, #f6f7f8 0%, #e8e9ec 100%);
       }
       .hero__title,
@@ -26,7 +26,6 @@
   }
   &__right {
     position: relative;
-    background: linear-gradient(180deg, #ce1e38 0%, #a3192e 100%);
   }
   &__left {
     padding: 14.5rem 5rem;
@@ -56,14 +55,15 @@
     position: relative;
     width: 100%;
     height: 100%;
+    background: linear-gradient(180deg, #ce1e38 0%, #a3192e 100%);
     img {
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
-      object-fit: contain;
-      transform: scale(1.1);
+      object-position: right;
+      // transform: scale(1.1);
     }
   }
 
@@ -77,5 +77,31 @@
     bottom: 2rem;
     z-index: 3;
     width: auto !important;
+  }
+}
+
+.hero--fransh {
+  .hero__right {
+    background: none;
+  }
+  .hero__container {
+    background-image: url("./../img/fransh-hero.webp"),
+      linear-gradient(180deg, #f6f7f8 0%, #f3f4f5 100%);
+    background-size: auto 100%, cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .hero__img {
+    img {
+      height: calc(100% - 2.2rem);
+      display: block;
+      transform: none;
+      top: unset;
+      left: unset;
+      right: 10rem;
+      bottom: 0;
+      width: auto;
+      object-fit: contain;
+    }
   }
 }

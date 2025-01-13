@@ -1,0 +1,33 @@
+.fransh-map {
+  padding-bottom: 4rem;
+  margin-bottom: 6rem;
+  position: relative;
+  &__title {
+    margin-bottom: 84rem;
+  }
+  &__bottom {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 2rem;
+    color: #454545;
+
+    span {
+      font-weight: 600;
+      color: #b01c32;
+    }
+  }
+  &__img {
+    position: absolute;
+    z-index: -1;
+    left: calc((100% - var(--container-width)) / 2);
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 300%;
+    width: 100%;
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: -18rem 0;
+    }
+  }
+}

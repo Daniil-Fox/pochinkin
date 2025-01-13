@@ -1,0 +1,68 @@
+.fransh-steps {
+  margin-bottom: 10rem;
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    ol,
+    ul {
+      margin: 0;
+      padding-left: 2rem;
+    }
+  }
+
+  &__bottom {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #454545;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    a {
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: inherit;
+    }
+    span {
+      color: #b01c32;
+    }
+  }
+
+  &__download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #b01c32;
+  }
+
+  &__dw {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-weight: 500;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: #303030;
+    svg {
+      width: 2.7rem;
+      height: 2.7rem;
+      flex-shrink: 0;
+    }
+  }
+}

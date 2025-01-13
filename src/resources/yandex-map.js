@@ -186,10 +186,10 @@ if (contactsSection) {
 
         if (item.city == city) {
           return `<li class="contacts__item contacts-item">
-              <div class="contacts-item__info">
+              <a href="./contacts-sing.html" class="contacts-item__info">
                 <div class="contacts-item__title">${address}</div>
                 <div class="contacts-item__metro">${metro}</div>
-              </div>
+              </a>
               <div class="contacts-item__tt desc">
                 ${ttArr.map((t) => `<span>${t}</span>`).join("")}
                 ${telArr
@@ -258,7 +258,7 @@ if (contactsSection) {
     });
 
     myMap.geoObjects.add(objectManager);
-
+    fillList("Москва");
     // const cityButtons = document.querySelectorAll(".contacts__city-button");
 
     cities.forEach((item, idx) => {
