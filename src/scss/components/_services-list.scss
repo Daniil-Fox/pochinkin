@@ -1,20 +1,50 @@
 .services-list {
   margin-bottom: 10rem;
+  @include mobile {
+    margin-bottom: 5rem;
+  }
   &__title {
     margin-bottom: 4rem;
+    @include mobile {
+      margin-bottom: 1rem;
+    }
   }
 
   &__list {
     columns: 3;
     column-gap: 2.5rem;
     line-height: 200%;
-
+    @include mobile {
+      columns: unset;
+      padding-left: 2rem;
+      line-height: 1.25;
+    }
     &:not(:last-child) {
       margin-bottom: 3rem;
+      @include mobile {
+        margin-bottom: 2rem;
+      }
     }
   }
 
   &__bottom {
     color: #454545;
+  }
+  &__more {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #2a8ce3;
+
+    display: none;
+    cursor: pointer;
+
+    @include mobile {
+      display: block;
+      margin-bottom: 2rem;
+    }
   }
 }

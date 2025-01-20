@@ -2,11 +2,16 @@
   display: flex;
   gap: 2.4rem;
   align-items: flex-start;
-
+  @include mobile {
+    gap: 1.5rem;
+  }
   &__count {
     font-weight: 700;
     font-size: 4rem;
     line-height: 1.2;
     color: #b01c32;
+    @include mobile {
+      font-size: 2.4rem;
+    }
   }
 }

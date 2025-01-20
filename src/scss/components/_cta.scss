@@ -1,5 +1,8 @@
 .cta {
   margin-bottom: 10rem;
+  @include mobile {
+    margin-bottom: 5rem;
+  }
   &__container {
     padding: 6rem 10rem;
     background-image: url("./../img/cta.webp"),
@@ -8,15 +11,26 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 1.2rem;
+
+    @include mobile {
+      padding: 4rem 2rem;
+    }
   }
 
   &__title {
     font-size: 3.8rem;
     margin-bottom: 1rem;
+    @include mobile {
+      font-size: 2.4rem;
+      margin-bottom: 0.7rem;
+    }
   }
 
   &__capture {
     margin-bottom: 3rem;
+    @include mobile {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -26,16 +40,34 @@
       linear-gradient(180deg, #e6e6e6 0%, #e5e5e3 100%);
     background-size: auto 100%, cover;
     background-position: right;
+
+    @include mobile {
+      background-image: url("./../img/cta.webp"),
+        linear-gradient(136deg, #cd1e38 0%, #971529 100%);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 1.2rem;
+    }
   }
   .cta__title,
   .form__extra {
     color: #303030;
+    @include mobile {
+      color: #fff;
+    }
   }
   .form__extra--agree {
     color: #8e8e8e;
+    @include mobile {
+      color: #fff;
+    }
   }
   .cta__capture {
     color: #b01c32;
+    @include mobile {
+      color: #fff;
+    }
   }
   .cta__content {
     max-width: 51rem;
@@ -46,6 +78,19 @@
   .form__label:last-child {
     grid-column: 1 span;
   }
+
+  .form__btn {
+    @include mobile {
+      background-color: #fff;
+      color: #b01c32;
+
+      @include hover {
+        border-color: #fff;
+        background-color: transparent;
+        color: #fff;
+      }
+    }
+  }
 }
 
 .cta--fransh {
@@ -55,7 +100,14 @@
     background-size: auto calc(100% - 2rem), cover;
     background-position: calc(100% - 100px) bottom, center;
     position: relative;
-
+    @include mobile {
+      background-image: url("./../img/cta.webp"),
+        linear-gradient(136deg, #cd1e38 0%, #971529 100%);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 1.2rem;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -68,6 +120,10 @@
       background-size: cover;
       background-position: top;
       background-repeat: no-repeat;
+
+      @include mobile {
+        display: none;
+      }
     }
   }
   .cta__title,

@@ -1,10 +1,21 @@
 .profit {
   margin-bottom: 10rem;
+  @include mobile {
+    margin-bottom: 5rem;
+  }
   &__title {
     margin-bottom: 3rem;
+
+    @include mobile {
+      margin-bottom: 1rem;
+    }
   }
 
   &__content {
+    ul,
+    ol {
+      padding-left: 2rem;
+    }
     ul,
     ol,
     p {

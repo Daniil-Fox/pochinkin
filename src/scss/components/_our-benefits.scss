@@ -1,14 +1,25 @@
 .our-benefits {
   margin-bottom: 10rem;
-
+  @include mobile {
+    margin-bottom: 5rem;
+  }
   &__title {
     margin-bottom: 4rem;
+    @include mobile {
+      margin-bottom: 1rem;
+    }
   }
 
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2.4rem;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
   }
 }
 

@@ -1,11 +1,20 @@
 .testi {
   margin-bottom: 10rem;
+  @include mobile {
+    margin-bottom: 5rem;
+  }
   &__title {
     margin-bottom: 5rem;
+    @include mobile {
+      margin-bottom: 3rem;
+    }
   }
   &__wrapper {
     position: relative;
     margin-bottom: 3rem;
+    @include mobile {
+      margin-bottom: 2rem;
+    }
   }
   &__tabs {
     display: flex;
@@ -40,6 +49,31 @@
       cursor: default;
       pointer-events: none;
       background-color: #ebf5e8;
+    }
+  }
+
+  &__mob {
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      gap: 6rem;
+    }
+  }
+  &__control {
+    @include mobile {
+      margin-top: 2rem;
+      position: static;
+      transform: none;
+    }
+    &--prev {
+      @include mobile {
+        transform: rotateZ(180deg);
+      }
+    }
+  }
+  &__pagination {
+    @include mobile {
+      display: none;
     }
   }
 }

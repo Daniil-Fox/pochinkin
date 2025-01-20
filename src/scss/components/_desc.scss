@@ -2,6 +2,9 @@
   margin-bottom: 5rem;
   &__title {
     margin-bottom: 3rem;
+    @include mobile {
+      margin-bottom: 1rem;
+    }
   }
 
   &__desc {
@@ -16,6 +19,24 @@
     &:not(:last-child) {
       margin-bottom: 3rem;
     }
+
+    @include mobile {
+      display: flex;
+      gap: 0;
+    }
+
+    &--four {
+      @include mobile {
+        flex-direction: column;
+        gap: 1.6rem;
+        .description__item {
+          width: 100%;
+        }
+        .desc-item__content {
+          font-size: 1.6rem;
+        }
+      }
+    }
   }
 
   &__item {
@@ -27,6 +48,9 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    @include mobile {
+      width: 27rem;
+    }
   }
 }
 
@@ -35,6 +59,10 @@
     font-weight: 700;
     font-size: 3.6rem;
     color: #b01c32;
+
+    @include mobile {
+      font-size: 3.6rem;
+    }
   }
   &__icon {
     width: 5rem;

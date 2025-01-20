@@ -1,4 +1,9 @@
 .header {
+  position: relative;
+  z-index: 101;
+  @include mobile {
+    border-bottom: 1px solid #f4f4f4;
+  }
   &__container {
     display: flex;
     align-items: center;
@@ -6,14 +11,19 @@
     padding: 1rem 0;
   }
   &__logo {
+    flex-shrink: 0;
     display: block;
     width: 15rem;
     height: 8rem;
-
+    @include mobile {
+      width: 8rem;
+      height: 5rem;
+    }
     img {
       display: block;
       width: 100%;
       height: 100%;
+      object-fit: contain;
     }
   }
   &__tel {
@@ -31,6 +41,10 @@
       font-size: 1.6rem;
       color: #303030;
     }
+
+    @include mobile {
+      display: none;
+    }
   }
   &__left {
     display: flex;
@@ -40,11 +54,50 @@
   &__right {
     display: flex;
     gap: 2rem;
+
+    @include mobile {
+      display: none;
+    }
   }
 
+  &__mob {
+    display: none;
+    gap: 3rem;
+    @include mobile {
+      display: flex;
+    }
+  }
+  &__call,
+  &__burger {
+    width: 3.4rem;
+    height: 3.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__burger {
+    background-image: url("./../img/burger.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.burger--active {
+      background-image: url("./../img/burger-cross.svg");
+    }
+  }
   &__nav {
     padding: 1.7rem 0;
     border-top: 1px solid #f4f4f4;
     border-bottom: 1px solid #f4f4f4;
+
+    @include mobile {
+      display: none;
+    }
   }
 }

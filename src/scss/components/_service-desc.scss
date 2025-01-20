@@ -1,8 +1,14 @@
 .service-desc {
   margin-bottom: 10rem;
   padding-top: 7rem;
-
+  @include mobile {
+    padding-top: 3rem;
+    margin-bottom: 5rem;
+  }
   &__title {
     margin-bottom: 3rem;
+    @include mobile {
+      margin-bottom: 1rem;
+    }
   }
 }

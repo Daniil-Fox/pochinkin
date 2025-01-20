@@ -1,11 +1,20 @@
 .dets {
   margin-bottom: 10rem;
+  @include mobile {
+    margin-bottom: 5rem;
+  }
   &__title {
     margin-bottom: 3rem;
+    @include mobile {
+      margin-bottom: 1rem;
+    }
   }
   &__desc {
     &:not(:last-child) {
       margin-bottom: 4rem;
+      @include mobile {
+        margin-bottom: 3rem;
+      }
     }
   }
 }

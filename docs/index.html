@@ -69,6 +69,28 @@
           Перезвоните мне
         </button>
       </div>
+      <div class="header__mob">
+        <a href="tel:88002004434" class="header__call">
+          <svg
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.4543 18.2836L22.8097 18.9254C22.8097 18.9254 21.2755 20.4497 17.0892 16.2876C12.903 12.1254 14.4372 10.6011 14.4372 10.6011L14.8424 10.1959C15.844 9.20138 15.9389 7.60338 15.0648 6.43605L13.2798 4.0518C12.1975 2.6068 10.1079 2.41555 8.86833 3.64805L6.64416 5.85805C6.03075 6.47005 5.61991 7.26055 5.6695 8.13888C5.797 10.3871 6.81416 15.2222 12.4865 20.8634C18.5031 26.8446 24.1485 27.0826 26.4562 26.8672C27.1872 26.7992 27.8219 26.4281 28.3333 25.9181L30.345 23.9177C31.705 22.5676 31.3225 20.2514 29.5828 19.3065L26.877 17.8346C25.7352 17.2155 24.3468 17.3968 23.4543 18.2836Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+        <button
+          class="btn-reset burger header__burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          data-burger
+        ></button>
+      </div>
     </div>
   </div>
   <div class="header__nav">
@@ -96,7 +118,58 @@
     </div>
   </div>
 </header>
-<div class="modal modal-form">
+<div class="menu" data-menu>
+  <div class="menu__body">
+    <nav class="nav menu__nav">
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="./" class="nav__link">Главная</a></li>
+        <li class="nav__item">
+          <a href="./service.html" class="nav__link">Услуги</a>
+        </li>
+        <li class="nav__item">
+          <a href="./fransh.html" class="nav__link">Сотрудничество</a>
+        </li>
+        <li class="nav__item">
+          <a href="./fransh.html" class="nav__link">Франшиза</a>
+        </li>
+        <li class="nav__item">
+          <a href="./contacts.html" class="nav__link">Контакты</a>
+        </li>
+        <li class="nav__item">
+          <a href="./about.html" class="nav__link">О нас</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu__bottom">
+      <div class="footer__socials menu__socials">
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#whatsapp"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tg"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg>
+        </a>
+      </div>
+      <a href="#" class="btn btn--stroke menu__btn">
+        Контакты и адреса мастерских
+      </a>
+    </div>
+  </div>
+</div>
+ <div class="modal modal-form">
   <div class="modal__body">
     <div class="modal__close">
       <svg
@@ -159,46 +232,6 @@
     <div class="hero__wrapper">
       <div class="hero__slider swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="hero__container hero__container--red">
-              <div class="hero__left">
-                <h4 class="hero__subtitle">Сеть мастерских</h4>
-                <h1 class="hero__title">Мистер Починкин</h1>
-                <p class="hero__desc">
-                  Ремонт детских колясок, электросамокатов, очков, чемоданов на
-                  колесиках
-                </p>
-                <button class="modal-btn btn-reset btn btn--white">
-                  Оставить заявку
-                </button>
-              </div>
-              <div class="hero__right">
-                <div class="hero__img">
-                  <img src="./img/main/01.webp" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="hero__container hero__container--red">
-              <div class="hero__left">
-                <h4 class="hero__subtitle">Сеть мастерских</h4>
-                <h1 class="hero__title">Мистер Починкин</h1>
-                <p class="hero__desc">
-                  Ремонт детских колясок, электросамокатов, очков, чемоданов на
-                  колесиках
-                </p>
-                <button class="modal-btn btn-reset btn btn--white">
-                  Оставить заявку
-                </button>
-              </div>
-              <div class="hero__right">
-                <div class="hero__img">
-                  <img src="./img/main/01.webp" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="swiper-slide">
             <div class="hero__container hero__container--red">
               <div class="hero__left">
@@ -347,41 +380,42 @@
       сеть сервсиных центров в Москве, Санкт-Петербурге, Казани и Калининграде.
       Будем рады видеть Вас, в наших мастерских!
     </p>
+    <div class="description__slider swiper">
+      <div class="description__items swiper-wrapper">
+        <div class="description__item swiper-slide desc-item">
+          <div class="desc-item__icon">
+            <img src="./img/desc/01.svg" alt="" />
+          </div>
+          <div class="desc-item__content desc">
+            Устраняем поломки любой сложности
+          </div>
+        </div>
 
-    <div class="description__items">
-      <div class="description__item desc-item">
-        <div class="desc-item__icon">
-          <img src="./img/desc/01.svg" alt="" />
+        <div class="description__item swiper-slide desc-item">
+          <div class="desc-item__icon">
+            <img src="./img/desc/02.svg" alt="" />
+          </div>
+          <div class="desc-item__content desc">
+            Работают только опытные мастера
+          </div>
         </div>
-        <div class="desc-item__content desc">
-          Устраняем поломки любой сложности
-        </div>
-      </div>
 
-      <div class="description__item desc-item">
-        <div class="desc-item__icon">
-          <img src="./img/desc/02.svg" alt="" />
+        <div class="description__item swiper-slide desc-item">
+          <div class="desc-item__icon">
+            <img src="./img/desc/03.svg" alt="" />
+          </div>
+          <div class="desc-item__content desc">
+            Возможен выездной ремонт на дому
+          </div>
         </div>
-        <div class="desc-item__content desc">
-          Работают только опытные мастера
-        </div>
-      </div>
 
-      <div class="description__item desc-item">
-        <div class="desc-item__icon">
-          <img src="./img/desc/03.svg" alt="" />
-        </div>
-        <div class="desc-item__content desc">
-          Возможен выездной ремонт на дому
-        </div>
-      </div>
-
-      <div class="description__item desc-item">
-        <div class="desc-item__icon">
-          <img src="./img/desc/04.svg" alt="" />
-        </div>
-        <div class="desc-item__content desc">
-          Беремся даже за сложные случаи
+        <div class="description__item swiper-slide desc-item">
+          <div class="desc-item__icon">
+            <img src="./img/desc/04.svg" alt="" />
+          </div>
+          <div class="desc-item__content desc">
+            Беремся даже за сложные случаи
+          </div>
         </div>
       </div>
     </div>
@@ -657,78 +691,77 @@
     </p>
     <div class="franch__act act">
       <p class="title3 act__title">Актуальность наших услуг</p>
-
-      <div class="act__items">
-        <div class="act__item act-item">
-          <div class="act-item__icon">
-            <img src="./img/act/01.svg" alt="" />
-          </div>
-          <div class="act-item__content">
-            <div class="act-item__title">Повторные покупки</div>
-            <div class="desc act-item__desc">
-              80% клиентов обращаются<br />за услугами вновь
+      <div class="swiper franch__slider">
+        <div class="act__items swiper-wrapper">
+          <div class="act__item swiper-slide act-item">
+            <div class="act-item__icon">
+              <img src="./img/act/01.svg" alt="" />
+            </div>
+            <div class="act-item__content">
+              <div class="act-item__title">Повторные покупки</div>
+              <div class="desc act-item__desc">
+                80% клиентов обращаются<br />за услугами вновь
+              </div>
             </div>
           </div>
-        </div>
-        <div class="act__item act-item">
-          <div class="act-item__icon">
-            <img src="./img/act/02.svg" alt="" />
-          </div>
-          <div class="act-item__content">
-            <div class="act-item__title">Ценность</div>
-            <div class="desc act-item__desc">
-              Люди ценят свои вещи и желают <br />
-              подарить им новую жизнь
+          <div class="act__item swiper-slide act-item">
+            <div class="act-item__icon">
+              <img src="./img/act/02.svg" alt="" />
+            </div>
+            <div class="act-item__content">
+              <div class="act-item__title">Ценность</div>
+              <div class="desc act-item__desc">
+                Люди ценят свои вещи и желают <br />
+                подарить им новую жизнь
+              </div>
             </div>
           </div>
-        </div>
-        <div class="act__item act-item">
-          <div class="act-item__icon">
-            <img src="./img/act/03.svg" alt="" />
-          </div>
-          <div class="act-item__content">
-            <div class="act-item__title">Эксклюзивность</div>
-            <div class="desc act-item__desc">
-              Клиенты обращаются с ремонтом <br />
-              уникальных и редких вещей
+          <div class="act__item swiper-slide act-item">
+            <div class="act-item__icon">
+              <img src="./img/act/03.svg" alt="" />
+            </div>
+            <div class="act-item__content">
+              <div class="act-item__title">Эксклюзивность</div>
+              <div class="desc act-item__desc">
+                Клиенты обращаются с ремонтом <br />
+                уникальных и редких вещей
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="act__items">
-        <div class="act__item act-item">
-          <div class="act-item__icon">
-            <img src="./img/act/04.svg" alt="" />
-          </div>
-          <div class="act-item__content">
-            <div class="act-item__title">Стоимость</div>
-            <div class="desc act-item__desc">
-              Чаще всего цена ремонта сильно <br />
-              ниже покупки нового изделия
+          <div class="act__item swiper-slide act-item">
+            <div class="act-item__icon">
+              <img src="./img/act/04.svg" alt="" />
+            </div>
+            <div class="act-item__content">
+              <div class="act-item__title">Стоимость</div>
+              <div class="desc act-item__desc">
+                Чаще всего цена ремонта сильно <br />
+                ниже покупки нового изделия
+              </div>
             </div>
           </div>
-        </div>
-        <div class="act__item act-item">
-          <div class="act-item__icon">
-            <img src="./img/act/05.svg" alt="" />
-          </div>
-          <div class="act-item__content">
-            <div class="act-item__title">Изменение рынка</div>
-            <div class="desc act-item__desc">
-              В связи с уходом мировых брендов спрос <br />
-              на ремонт вещей стабильно растет
+          <div class="act__item swiper-slide act-item">
+            <div class="act-item__icon">
+              <img src="./img/act/05.svg" alt="" />
+            </div>
+            <div class="act-item__content">
+              <div class="act-item__title">Изменение рынка</div>
+              <div class="desc act-item__desc">
+                В связи с уходом мировых брендов спрос <br />
+                на ремонт вещей стабильно растет
+              </div>
             </div>
           </div>
-        </div>
-        <div class="act__item act-item">
-          <div class="act-item__icon">
-            <img src="./img/act/06.svg" alt="" />
-          </div>
-          <div class="act-item__content">
-            <div class="act-item__title">Доверие</div>
-            <div class="desc act-item__desc">
-              Мистер Починкин имеет <br />
-              отличную репутацию
+          <div class="act__item swiper-slide act-item">
+            <div class="act-item__icon">
+              <img src="./img/act/06.svg" alt="" />
+            </div>
+            <div class="act-item__content">
+              <div class="act-item__title">Доверие</div>
+              <div class="desc act-item__desc">
+                Мистер Починкин имеет <br />
+                отличную репутацию
+              </div>
             </div>
           </div>
         </div>
@@ -737,57 +770,61 @@
 
     <div class="franch__ben f-ben">
       <p class="f-ben__title title3">Преимущества работы с нами</p>
-      <div class="f-ben__items">
-        <div class="f-ben__item">
-          <div class="f-ben__capture">Централизованные закупки</div>
-          <p class="desc f-ben__desc">
-            Только для наших партнеров цена на расходные материалы со скидкой.
-          </p>
-        </div>
-        <div class="f-ben__item">
-          <div class="f-ben__capture">Обучение</div>
-          <p class="desc f-ben__desc">
-            Четко выстроенный процесс обучения новых мастеров авторской
-            методике.
-          </p>
-        </div>
-        <div class="f-ben__item">
-          <div class="f-ben__capture">Ведение до результата</div>
-          <p class="desc f-ben__desc">
-            Заработок наших партнеров превыше всего.Наша цель — создать сильную
-            сеть.
-          </p>
-        </div>
-        <div class="f-ben__item">
-          <div class="f-ben__capture">Общий чат</div>
-          <p class="desc f-ben__desc">
-            Только для наших франчайзи-партнеров мы предлагаем уникальные цены
-            на закупку запасных частей и расходных материалов
-          </p>
-        </div>
-        <div class="f-ben__item">
-          <div class="f-ben__capture">Поддержка</div>
-          <p class="desc f-ben__desc">
-            Всегда на связи личный менеджер, который поможет решить любой вопрос
-            в работе
-          </p>
-        </div>
-        <div class="f-ben__item">
-          <div class="f-ben__capture">Маркетинг</div>
-          <p class="desc f-ben__desc">
-            Приведем 100 первых клиентов в первый месяц за счет контекстной и
-            таргетированной рекламы
-          </p>
-        </div>
-        <div class="f-ben__item">
-          <div class="f-ben__capture">База знаний</div>
-          <p class="desc f-ben__desc">
-            5 разделов обучения по всем аспектам бизнеса
-          </p>
-        </div>
-        <div class="f-ben__item">
-          <div class="f-ben__capture">Бизнес-процессы</div>
-          <p class="desc f-ben__desc">Отработанные схемы построения бизнеса</p>
+      <div class="f-ben__slider swiper">
+        <div class="f-ben__items swiper-wrapper">
+          <div class="f-ben__item swiper-slide">
+            <div class="f-ben__capture">Централизованные закупки</div>
+            <p class="desc f-ben__desc">
+              Только для наших партнеров цена на расходные материалы со скидкой.
+            </p>
+          </div>
+          <div class="f-ben__item swiper-slide">
+            <div class="f-ben__capture">Обучение</div>
+            <p class="desc f-ben__desc">
+              Четко выстроенный процесс обучения новых мастеров авторской
+              методике.
+            </p>
+          </div>
+          <div class="f-ben__item swiper-slide">
+            <div class="f-ben__capture">Ведение до результата</div>
+            <p class="desc f-ben__desc">
+              Заработок наших партнеров превыше всего.Наша цель — создать
+              сильную сеть.
+            </p>
+          </div>
+          <div class="f-ben__item swiper-slide">
+            <div class="f-ben__capture">Общий чат</div>
+            <p class="desc f-ben__desc">
+              Только для наших франчайзи-партнеров мы предлагаем уникальные цены
+              на закупку запасных частей и расходных материалов
+            </p>
+          </div>
+          <div class="f-ben__item swiper-slide">
+            <div class="f-ben__capture">Поддержка</div>
+            <p class="desc f-ben__desc">
+              Всегда на связи личный менеджер, который поможет решить любой
+              вопрос в работе
+            </p>
+          </div>
+          <div class="f-ben__item swiper-slide">
+            <div class="f-ben__capture">Маркетинг</div>
+            <p class="desc f-ben__desc">
+              Приведем 100 первых клиентов в первый месяц за счет контекстной и
+              таргетированной рекламы
+            </p>
+          </div>
+          <div class="f-ben__item swiper-slide">
+            <div class="f-ben__capture">База знаний</div>
+            <p class="desc f-ben__desc">
+              5 разделов обучения по всем аспектам бизнеса
+            </p>
+          </div>
+          <div class="f-ben__item swiper-slide">
+            <div class="f-ben__capture">Бизнес-процессы</div>
+            <p class="desc f-ben__desc">
+              Отработанные схемы построения бизнеса
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -896,52 +933,84 @@
  <section class="ready">
   <div class="container">
     <h2 class="ready__title">Выполненные работы</h2>
-    <div class="swiper ready__slider swiper-no-swiping">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="ready__ba b-a">
-            <div class="b-a__before">
-              <img src="./img/before-after/01.webp" alt="" />
+    <div class="ready__wrapper">
+      <div class="swiper ready__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="ready__ba b-a">
+              <div class="b-a__before">
+                <img src="./img/before-after/01.webp" alt="" />
+              </div>
+              <div class="b-a__after">
+                <img src="./img/before-after/02.webp" alt="" />
+              </div>
+              <div class="b-a__change"></div>
             </div>
-            <div class="b-a__after">
-              <img src="./img/before-after/02.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <div class="ready__ba b-a">
+              <div class="b-a__before">
+                <img src="./img/before-after/01.webp" alt="" />
+              </div>
+              <div class="b-a__after">
+                <img src="./img/before-after/02.webp" alt="" />
+              </div>
+              <div class="b-a__change"></div>
             </div>
-            <div class="b-a__change"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ready__ba b-a">
+              <div class="b-a__before">
+                <img src="./img/before-after/01.webp" alt="" />
+              </div>
+              <div class="b-a__after">
+                <img src="./img/before-after/02.webp" alt="" />
+              </div>
+              <div class="b-a__change"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ready__ba b-a">
+              <div class="b-a__before">
+                <img src="./img/before-after/01.webp" alt="" />
+              </div>
+              <div class="b-a__after">
+                <img src="./img/before-after/02.webp" alt="" />
+              </div>
+              <div class="b-a__change"></div>
+            </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="ready__ba b-a">
-            <div class="b-a__before">
-              <img src="./img/before-after/01.webp" alt="" />
-            </div>
-            <div class="b-a__after">
-              <img src="./img/before-after/02.webp" alt="" />
-            </div>
-            <div class="b-a__change"></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="ready__ba b-a">
-            <div class="b-a__before">
-              <img src="./img/before-after/01.webp" alt="" />
-            </div>
-            <div class="b-a__after">
-              <img src="./img/before-after/02.webp" alt="" />
-            </div>
-            <div class="b-a__change"></div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="ready__ba b-a">
-            <div class="b-a__before">
-              <img src="./img/before-after/01.webp" alt="" />
-            </div>
-            <div class="b-a__after">
-              <img src="./img/before-after/02.webp" alt="" />
-            </div>
-            <div class="b-a__change"></div>
-          </div>
-        </div>
+      </div>
+      <div
+        class="ready__control control-btn control-btn--prev ready__control--prev"
+      >
+        <svg
+          width="10"
+          height="16"
+          viewBox="0 0 10 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+          />
+        </svg>
+      </div>
+      <div
+        class="ready__control control-btn control-btn--next ready__control--next"
+      >
+        <svg
+          width="10"
+          height="16"
+          viewBox="0 0 10 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+          />
+        </svg>
       </div>
     </div>
     <div class="pagination ready__pagination"></div>
@@ -1063,35 +1132,37 @@
           </div>
         </div>
       </div>
-      <div
-        class="testi__control control-btn control-btn--prev testi__control--prev"
-      >
-        <svg
-          width="10"
-          height="16"
-          viewBox="0 0 10 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+      <div class="testi__mob">
+        <div
+          class="testi__control control-btn control-btn--prev testi__control--prev"
         >
-          <path
-            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
-          />
-        </svg>
-      </div>
-      <div
-        class="testi__control control-btn control-btn--next testi__control--next"
-      >
-        <svg
-          width="10"
-          height="16"
-          viewBox="0 0 10 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          <svg
+            width="10"
+            height="16"
+            viewBox="0 0 10 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+            />
+          </svg>
+        </div>
+        <div
+          class="testi__control control-btn control-btn--next testi__control--next"
         >
-          <path
-            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
-          />
-        </svg>
+          <svg
+            width="10"
+            height="16"
+            viewBox="0 0 10 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+            />
+          </svg>
+        </div>
       </div>
     </div>
 
@@ -1101,15 +1172,21 @@
  <section class="price">
   <div class="container">
     <h2 class="title2 price__title">Стоимость услуг</h2>
-    <div class="price__tabs">
-      <div class="price__tab active" data-pricetab="chemodan">
-        Ремонт чемоданов
+    <div class="price__slider-tabs swiper">
+      <div class="price__tabs swiper-wrapper">
+        <div class="price__tab swiper-slide active" data-pricetab="chemodan">
+          Ремонт чемоданов
+        </div>
+        <div class="price__tab swiper-slide" data-pricetab="kolyaska">
+          Ремонт колясок
+        </div>
+        <div class="price__tab swiper-slide" data-pricetab="samokat">
+          Ремонт электросамокатов
+        </div>
+        <div class="price__tab swiper-slide" data-pricetab="ochki">
+          Ремонт очков
+        </div>
       </div>
-      <div class="price__tab" data-pricetab="kolyaska">Ремонт колясок</div>
-      <div class="price__tab" data-pricetab="samokat">
-        Ремонт электросамокатов
-      </div>
-      <div class="price__tab" data-pricetab="ochki">Ремонт очков</div>
     </div>
 
     <ul class="list-reset price__list active" data-pricelist="chemodan">
@@ -1318,9 +1395,28 @@
         <a href="#" class="footer__link"> Контакты и адреса мастерских </a>
       </div>
       <div class="footer__col">
-        <nav class="footer__nav f-nav">
-          <div class="f-nav__capture capture">Каталог</div>
-          <ul class="list-reset f-nav__list">
+        <nav class="footer__nav f-nav dropdown">
+          <div class="f-nav__capture capture dropdown-btn">
+            Каталог
+            <div class="f-nav__arrow">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10.5L12 15.5L17 10.5"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="list-reset f-nav__list dropdown-content">
             <li class="f-nav__item">
               <a href="#" class="f-nav__link">Ремонт чемоданов</a>
             </li>
@@ -1337,9 +1433,28 @@
         </nav>
       </div>
       <div class="footer__col">
-        <nav class="footer__nav f-nav">
-          <div class="f-nav__capture capture">Информация</div>
-          <ul class="list-reset f-nav__list">
+        <nav class="footer__nav f-nav dropdown">
+          <div class="f-nav__capture capture dropdown-btn">
+            Информация
+            <div class="f-nav__arrow">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10.5L12 15.5L17 10.5"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="list-reset f-nav__list dropdown-content">
             <li class="f-nav__item">
               <a href="#" class="f-nav__link">Услуги</a>
             </li>

@@ -1,17 +1,38 @@
 .franch {
   margin-bottom: 10rem;
+  @include mobile {
+    margin-bottom: 7.5rem;
+  }
   &__title {
     margin-bottom: 3rem;
+    @include mobile {
+      margin-bottom: 1rem;
+    }
   }
   &__desc {
     &:not(:last-child) {
       margin-bottom: 4rem;
+      @include mobile {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  &__slider {
+    @include mobile {
+      margin: 0 calc(-1 * var(--container-offset));
+      padding: 0 var(--container-offset);
     }
   }
 
   &__bottom {
     display: flex;
     justify-content: center;
+  }
+  &__btn {
+    @include mobile {
+      font-size: 1.6rem;
+      padding: 1.2rem 2.8rem;
+    }
   }
 }
 .f-ben {
@@ -20,11 +41,19 @@
   }
   &__title {
     margin-bottom: 4rem;
+    @include mobile {
+      margin-bottom: 2rem;
+    }
   }
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem 2.4rem;
+
+    @include mobile {
+      display: flex;
+      gap: 0;
+    }
   }
 
   &__item {
@@ -36,6 +65,13 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
+    @include mobile {
+      width: 28.2rem;
+      min-height: unset;
+      height: auto;
+      padding: 3rem 2.4rem;
+      gap: 6.2rem;
+    }
   }
 
   &__capture {

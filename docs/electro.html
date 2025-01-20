@@ -69,6 +69,28 @@
           Перезвоните мне
         </button>
       </div>
+      <div class="header__mob">
+        <a href="tel:88002004434" class="header__call">
+          <svg
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.4543 18.2836L22.8097 18.9254C22.8097 18.9254 21.2755 20.4497 17.0892 16.2876C12.903 12.1254 14.4372 10.6011 14.4372 10.6011L14.8424 10.1959C15.844 9.20138 15.9389 7.60338 15.0648 6.43605L13.2798 4.0518C12.1975 2.6068 10.1079 2.41555 8.86833 3.64805L6.64416 5.85805C6.03075 6.47005 5.61991 7.26055 5.6695 8.13888C5.797 10.3871 6.81416 15.2222 12.4865 20.8634C18.5031 26.8446 24.1485 27.0826 26.4562 26.8672C27.1872 26.7992 27.8219 26.4281 28.3333 25.9181L30.345 23.9177C31.705 22.5676 31.3225 20.2514 29.5828 19.3065L26.877 17.8346C25.7352 17.2155 24.3468 17.3968 23.4543 18.2836Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+        <button
+          class="btn-reset burger header__burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          data-burger
+        ></button>
+      </div>
     </div>
   </div>
   <div class="header__nav">
@@ -96,7 +118,58 @@
     </div>
   </div>
 </header>
-<div class="modal modal-form">
+<div class="menu" data-menu>
+  <div class="menu__body">
+    <nav class="nav menu__nav">
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="./" class="nav__link">Главная</a></li>
+        <li class="nav__item">
+          <a href="./service.html" class="nav__link">Услуги</a>
+        </li>
+        <li class="nav__item">
+          <a href="./fransh.html" class="nav__link">Сотрудничество</a>
+        </li>
+        <li class="nav__item">
+          <a href="./fransh.html" class="nav__link">Франшиза</a>
+        </li>
+        <li class="nav__item">
+          <a href="./contacts.html" class="nav__link">Контакты</a>
+        </li>
+        <li class="nav__item">
+          <a href="./about.html" class="nav__link">О нас</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu__bottom">
+      <div class="footer__socials menu__socials">
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#whatsapp"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tg"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg>
+        </a>
+      </div>
+      <a href="#" class="btn btn--stroke menu__btn">
+        Контакты и адреса мастерских
+      </a>
+    </div>
+  </div>
+</div>
+ <div class="modal modal-form">
   <div class="modal__body">
     <div class="modal__close">
       <svg
@@ -429,6 +502,25 @@
                       </svg>
                       1 день
                     </li>
+
+                    <li>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.875 12.375H12.375V17.25M3.75 9H20.25M15.75 6V3M8.25 6V3M5.25 21H18.75C19.1478 21 19.5294 20.842 19.8107 20.5607C20.092 20.2794 20.25 19.8978 20.25 19.5V6C20.25 5.60218 20.092 5.22064 19.8107 4.93934C19.5294 4.65804 19.1478 4.5 18.75 4.5H5.25C4.85218 4.5 4.47064 4.65804 4.18934 4.93934C3.90804 5.22064 3.75 5.60218 3.75 6V19.5C3.75 19.8978 3.90804 20.2794 4.18934 20.5607C4.47064 20.842 4.85218 21 5.25 21Z"
+                          stroke="#B01C32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Июнь 2024 года
+                    </li>
                     <li>
                       <svg
                         width="20"
@@ -456,24 +548,6 @@
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M10.875 12.375H12.375V17.25M3.75 9H20.25M15.75 6V3M8.25 6V3M5.25 21H18.75C19.1478 21 19.5294 20.842 19.8107 20.5607C20.092 20.2794 20.25 19.8978 20.25 19.5V6C20.25 5.60218 20.092 5.22064 19.8107 4.93934C19.5294 4.65804 19.1478 4.5 18.75 4.5H5.25C4.85218 4.5 4.47064 4.65804 4.18934 4.93934C3.90804 5.22064 3.75 5.60218 3.75 6V19.5C3.75 19.8978 3.90804 20.2794 4.18934 20.5607C4.47064 20.842 4.85218 21 5.25 21Z"
-                          stroke="#B01C32"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      Июнь 2024 года
-                    </li>
-                    <li>
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
                           d="M12 2.99991L12.394 2.07991C12.2695 2.02654 12.1355 1.99902 12 1.99902C11.8645 1.99902 11.7305 2.02654 11.606 2.07991L12 2.99991ZM12 20.9999L11.504 21.8679C11.6551 21.9542 11.826 21.9996 12 21.9996C12.174 21.9996 12.3449 21.9542 12.496 21.8679L12 20.9999ZM11.606 2.08091L5.212 4.81991L6 6.65991L12.394 3.91991L11.606 2.08091ZM4 6.65891V13.5189H6V6.65891H4ZM7.527 19.5959L11.504 21.8679L12.496 20.1319L8.519 17.8589L7.527 19.5959ZM12.496 21.8679L16.473 19.5959L15.481 17.8589L11.504 20.1319L12.496 21.8679ZM20 13.5179V6.65991H18V13.5199L20 13.5179ZM18.788 4.82091L12.394 2.08091L11.606 3.91891L18 6.65991L18.788 4.82091ZM20 6.65991C20 6.26857 19.8851 5.88584 19.6697 5.55913C19.4542 5.23243 19.1477 4.9751 18.788 4.82091L18 6.65991H20ZM16.473 19.5959C17.5446 18.9835 18.4353 18.0997 19.0547 17.0321C19.6741 15.9645 20.0002 14.7522 20 13.5179H18C17.9999 14.3994 17.7667 15.2652 17.3242 16.0275C16.8816 16.7899 16.2454 17.4217 15.48 17.8589L16.473 19.5959ZM4 13.5179C3.99994 14.752 4.32615 15.9642 4.94554 17.0316C5.56494 18.099 6.45551 18.9836 7.527 19.5959L8.519 17.8589C7.75406 17.4217 7.11823 16.7902 6.67587 16.0282C6.23352 15.2663 6.00036 14.401 6 13.5199L4 13.5179ZM5.212 4.81991C4.85216 4.97417 4.5455 5.23165 4.33005 5.55855C4.11461 5.88545 3.99985 6.2684 4 6.65991H6L5.212 4.81991Z"
                           fill="#B01C32"
                         />
@@ -488,6 +562,15 @@
                       Гарантия 1 год
                     </li>
                   </ul>
+                  <div class="comp-item__ba comp-item__ba--mob b-a">
+                    <div class="b-a__before">
+                      <img src="./img/before-after/01.webp" alt="" />
+                    </div>
+                    <div class="b-a__after">
+                      <img src="./img/before-after/02.webp" alt="" />
+                    </div>
+                    <div class="b-a__change"></div>
+                  </div>
                   <div class="comp-item__capture capture">
                     Этапы выполнения работы
                   </div>
@@ -509,7 +592,7 @@
                   </ul>
                 </div>
                 <div class="comp-item__right">
-                  <div class="ready__ba b-a">
+                  <div class="comp-item__ba b-a">
                     <div class="b-a__before">
                       <img src="./img/before-after/01.webp" alt="" />
                     </div>
@@ -626,7 +709,7 @@
                   </ul>
                 </div>
                 <div class="comp-item__right">
-                  <div class="ready__ba b-a">
+                  <div class="comp-item__ba b-a">
                     <div class="b-a__before">
                       <img src="./img/before-after/01.webp" alt="" />
                     </div>
@@ -972,6 +1055,7 @@
       <li>Чехол, накидка на ноги для коляски</li>
       <li>Предпродажная подготовка</li>
     </ul>
+    <div class="services-list__more">Открыть больше</div>
 
     <div class="services-list__bottom desc">
       На сайте перечислена лишь малая часть производимых работ. Цены носят
@@ -1162,35 +1246,37 @@
           </div>
         </div>
       </div>
-      <div
-        class="testi__control control-btn control-btn--prev testi__control--prev"
-      >
-        <svg
-          width="10"
-          height="16"
-          viewBox="0 0 10 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+      <div class="testi__mob">
+        <div
+          class="testi__control control-btn control-btn--prev testi__control--prev"
         >
-          <path
-            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
-          />
-        </svg>
-      </div>
-      <div
-        class="testi__control control-btn control-btn--next testi__control--next"
-      >
-        <svg
-          width="10"
-          height="16"
-          viewBox="0 0 10 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          <svg
+            width="10"
+            height="16"
+            viewBox="0 0 10 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+            />
+          </svg>
+        </div>
+        <div
+          class="testi__control control-btn control-btn--next testi__control--next"
         >
-          <path
-            d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
-          />
-        </svg>
+          <svg
+            width="10"
+            height="16"
+            viewBox="0 0 10 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.860652 1.67667L2.09849 0.440003L8.84065 7.17984C8.94933 7.28783 9.03558 7.41625 9.09444 7.55771C9.15329 7.69917 9.18359 7.85087 9.18359 8.00409C9.18359 8.1573 9.15329 8.309 9.09444 8.45046C9.03558 8.59192 8.94933 8.72034 8.84065 8.82834L2.09849 15.5717L0.861818 14.335L7.18982 8.00584L0.860652 1.67667Z"
+            />
+          </svg>
+        </div>
       </div>
     </div>
 
@@ -1308,9 +1394,9 @@
       </div>
     </div>
 
-    <div id="controls">
+    <div class="swiper cities-slider" id="controls">
       <div
-        class="contacts__row contacts__cities contacts__row--30"
+        class="contacts__row swiper-wrapper contacts__cities contacts__row--30"
         id="cities"
       ></div>
     </div>
@@ -1709,9 +1795,28 @@
         <a href="#" class="footer__link"> Контакты и адреса мастерских </a>
       </div>
       <div class="footer__col">
-        <nav class="footer__nav f-nav">
-          <div class="f-nav__capture capture">Каталог</div>
-          <ul class="list-reset f-nav__list">
+        <nav class="footer__nav f-nav dropdown">
+          <div class="f-nav__capture capture dropdown-btn">
+            Каталог
+            <div class="f-nav__arrow">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10.5L12 15.5L17 10.5"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="list-reset f-nav__list dropdown-content">
             <li class="f-nav__item">
               <a href="#" class="f-nav__link">Ремонт чемоданов</a>
             </li>
@@ -1728,9 +1833,28 @@
         </nav>
       </div>
       <div class="footer__col">
-        <nav class="footer__nav f-nav">
-          <div class="f-nav__capture capture">Информация</div>
-          <ul class="list-reset f-nav__list">
+        <nav class="footer__nav f-nav dropdown">
+          <div class="f-nav__capture capture dropdown-btn">
+            Информация
+            <div class="f-nav__arrow">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10.5L12 15.5L17 10.5"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="list-reset f-nav__list dropdown-content">
             <li class="f-nav__item">
               <a href="#" class="f-nav__link">Услуги</a>
             </li>

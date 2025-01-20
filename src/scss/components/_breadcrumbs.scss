@@ -1,7 +1,11 @@
 .breadcrumbs {
   padding: 2.5rem 0;
+  @include mobile {
+    display: none;
+  }
   span {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
     a {

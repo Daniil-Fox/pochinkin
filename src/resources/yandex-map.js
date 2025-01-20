@@ -263,7 +263,7 @@ if (contactsSection) {
 
     cities.forEach((item, idx) => {
       const btn = document.createElement("button");
-      btn.className = "contacts__city-button btn-reset";
+      btn.className = "contacts__city-button swiper-slide btn-reset";
 
       if (idx == 0) {
         btn.classList.add("active");

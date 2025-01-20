@@ -1,8 +1,14 @@
 .fransh-steps {
   margin-bottom: 10rem;
-
+  @include mobile {
+    margin-bottom: 5rem;
+  }
   &__title {
     margin-bottom: 3rem;
+
+    @include mobile {
+      margin-bottom: 1rem;
+    }
   }
 
   &__content {
@@ -21,6 +27,9 @@
     font-weight: 500;
     font-size: 1.6rem;
     color: #454545;
+    @include mobile {
+      font-size: 1.4rem;
+    }
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
@@ -46,6 +55,10 @@
     font-size: 2.4rem;
     text-align: center;
     color: #b01c32;
+
+    @include mobile {
+      font-size: 2rem;
+    }
   }
 
   &__dw {
@@ -59,10 +72,17 @@
     text-decoration-skip-ink: none;
     text-align: center;
     color: #303030;
+    @include mobile {
+      font-size: 1.6rem;
+    }
     svg {
       width: 2.7rem;
       height: 2.7rem;
       flex-shrink: 0;
+      @include mobile {
+        width: 2.2rem;
+        height: 2.2rem;
+      }
     }
   }
 }

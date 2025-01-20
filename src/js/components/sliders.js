@@ -29,6 +29,16 @@ new Swiper(".partners__slider", {
     el: ".partners__pagination",
     clickable: true,
   },
+  breakpoints: {
+    320: {
+      slidesPerView: "auto",
+      spaceBetween: 15,
+    },
+    769: {
+      slidesPerView: 6,
+      spaceBetween: 28,
+    },
+  },
 });
 
 new Swiper(".ready__slider", {
@@ -42,8 +52,22 @@ new Swiper(".ready__slider", {
     el: ".ready__pagination",
     clickable: true,
   },
+  breakpoints: {
+    320: {
+      slidesPerView: "auto",
+      spaceBetween: 15,
+    },
+    769: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+      allowTouchMove: false,
+    },
+  },
 });
-
+new Swiper(".cities-slider", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+});
 new Swiper(".video__slider", {
   slidesPerView: 3,
   spaceBetween: 24,
@@ -56,9 +80,24 @@ new Swiper(".video__slider", {
     el: ".video__pagination",
     clickable: true,
   },
+  breakpoints: {
+    320: {
+      slidesPerView: "auto",
+      spaceBetween: 15,
+    },
+    769: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+  },
 });
 
 const testiTabs = new Swiper(".testi__slider-tabs", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  freeMode: true,
+});
+const priceTabs = new Swiper(".price__slider-tabs", {
   slidesPerView: "auto",
   spaceBetween: 20,
   freeMode: true,
@@ -74,6 +113,16 @@ const testiSlider = new Swiper(".testi__slider", {
   pagination: {
     el: ".testi__pagination",
     clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    769: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
   },
 });
 
@@ -140,6 +189,18 @@ window.addEventListener("DOMContentLoaded", () => {
     }
     // someFunc
   );
+  resizableSwiper("(max-width: 768px)", ".description__slider", {
+    spaceBetween: 15,
+    slidesPerView: "auto",
+  });
+  resizableSwiper("(max-width: 768px)", ".franch__slider", {
+    spaceBetween: 15,
+    slidesPerView: "auto",
+  });
+  resizableSwiper("(max-width: 768px)", ".f-ben__slider", {
+    spaceBetween: 15,
+    slidesPerView: "auto",
+  });
 });
 
 export { testiSlider };

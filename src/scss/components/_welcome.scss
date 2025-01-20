@@ -6,11 +6,21 @@
     font-size: 2.4rem;
     text-align: center;
     color: #303030;
+
+    @include mobile {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
   }
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.4rem;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+    }
   }
   &__item {
     border: 1px solid #b01c32;
@@ -20,5 +30,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .desc {
+      font-weight: 600;
+    }
+    @include mobile {
+      padding: 2rem;
+    }
   }
 }

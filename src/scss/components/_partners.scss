@@ -1,10 +1,21 @@
 .partners {
   margin-bottom: 10rem;
+  @include mobile {
+    margin-bottom: 3rem;
+  }
   &__title {
     margin-bottom: 5rem;
   }
   &__wrapper {
     position: relative;
+    @include mobile {
+      margin-bottom: 2rem;
+    }
+    .swiper-slide {
+      @include mobile {
+        width: auto;
+      }
+    }
   }
   &__item {
     display: flex;
@@ -22,13 +33,26 @@
 
       user-select: none;
     }
-  }
 
+    @include mobile {
+      height: 8.7rem;
+      width: 17.2rem;
+    }
+  }
+  &__control {
+    @include mobile {
+      display: none;
+    }
+  }
   &__pagination {
     width: 100%;
     margin-top: 2rem;
     &:not(:last-child) {
       margin-bottom: 3.5rem;
+    }
+
+    @include mobile {
+      display: none;
     }
   }
 }

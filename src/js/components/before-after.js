@@ -20,9 +20,14 @@ if (baSliders.length > 0) {
         change.style.left = `${shift}px`;
       };
 
+      window.addEventListener("resize", (e) => {
+        width = slider.offsetWidth;
+        beforeImg.style.width = `${width}px`;
+      });
+
       const pauseEvents = (e) => {
         e.stopPropagation();
-        e.preventDefault();
+        // e.preventDefault();
         return false;
       };
       slider.addEventListener("mouseup", (e) => {
@@ -44,6 +49,31 @@ if (baSliders.length > 0) {
         x -= slider.getBoundingClientRect().left;
         beforeAfterSlider(x);
         pauseEvents(e);
+      });
+
+      change.addEventListener("touchend", (e) => {
+        isActive = false;
+      });
+
+      change.addEventListener("touchstart", (e) => {
+        isActive = true;
+      });
+
+      slider.addEventListener("touchcancel", (e) => {
+        isActive = false;
+      });
+
+      slider.addEventListener("touchmove", (e) => {
+        if (!isActive) return;
+
+        let x;
+        let i;
+
+        for (i = 0; i < e.changedTouches.length; i++) {
+          x = e.changedTouches[i].pageX;
+          beforeAfterSlider(x);
+          pauseEvents(e);
+        }
       });
     });
   });

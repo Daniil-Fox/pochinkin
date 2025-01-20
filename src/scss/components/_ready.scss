@@ -1,6 +1,8 @@
 .ready {
   margin-bottom: 10rem;
-
+  @include mobile {
+    margin-bottom: 5rem;
+  }
   &__title {
     margin: 0;
     margin-bottom: 5rem;
@@ -8,6 +10,17 @@
     font-weight: 700;
     font-size: 2.4rem;
     color: hsl(0, 0%, 19%);
+    @include mobile {
+      margin-bottom: 2rem;
+    }
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__control {
+    @include mobile {
+      display: none;
+    }
   }
   &__slider {
     &:not(:last-child) {
@@ -15,11 +28,18 @@
     }
     .swiper-slide {
       box-sizing: border-box;
+
+      @include mobile {
+        width: 29rem;
+      }
     }
   }
   &__pagination {
     &:not(:last-child) {
       margin-bottom: 4rem;
+    }
+    @include mobile {
+      display: none;
     }
   }
 
@@ -30,5 +50,9 @@
 
   &__ba {
     height: 46.4rem;
+
+    @include mobile {
+      height: 23rem;
+    }
   }
 }

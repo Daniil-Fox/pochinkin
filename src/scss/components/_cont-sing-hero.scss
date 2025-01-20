@@ -2,19 +2,34 @@
   margin-bottom: 5rem;
   &__top {
     margin-bottom: 3rem;
+    @include mobile {
+      margin-top: 2rem;
+      margin-bottom: 1.6rem;
+    }
   }
   &__title {
     margin-bottom: 5rem;
+    @include mobile {
+      margin-bottom: 3rem;
+    }
   }
 
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   &__left {
     height: 57rem;
+    @include mobile {
+      height: 32rem;
+    }
   }
 
   &__slider {
@@ -50,6 +65,9 @@
     p {
       max-height: 10rem;
       overflow-y: auto;
+      @include mobile {
+        max-height: unset;
+      }
     }
   }
   &__capture {
@@ -61,6 +79,9 @@
     flex-direction: column;
     gap: 4rem;
     justify-content: space-between;
+    @include mobile {
+      gap: 3rem;
+    }
   }
 
   &__list {
@@ -76,6 +97,10 @@
       font-weight: 500;
       font-size: 1.6rem;
       color: #303030;
+      @include mobile {
+        padding: 1.2rem 2rem;
+        font-size: 1.4rem;
+      }
     }
   }
 }

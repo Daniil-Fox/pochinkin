@@ -1,14 +1,28 @@
 .contacts-main {
   margin-bottom: 10rem;
+  @include mobile {
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+  }
   &__title {
     font-weight: 700;
     margin-bottom: 5.2rem;
+
+    @include mobile {
+      margin-bottom: 2rem;
+    }
   }
 
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2.4rem;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
   }
 }
 

@@ -1,8 +1,16 @@
 .brands {
   margin-top: 7rem;
   margin-bottom: 10rem;
+
+  @include mobile {
+    margin-top: 0;
+    margin-bottom: 5rem;
+  }
   &__title {
     margin-bottom: 3rem;
+    @include mobile {
+      margin-bottom: 1rem;
+    }
   }
   &__subtitle {
     margin-bottom: 2rem;
@@ -10,6 +18,11 @@
     font-weight: 600;
     font-size: 2.4rem;
     color: #454545;
+
+    @include mobile {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
   }
   &__row {
     display: grid;
@@ -17,6 +30,15 @@
     gap: 2.4rem;
     &:not(:last-child) {
       margin-bottom: 3rem;
+      @include mobile {
+        margin-bottom: 2rem;
+      }
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
     }
   }
   &__desc {
@@ -29,6 +51,10 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
+    @include mobile {
+      display: flex;
+      gap: 0;
+    }
   }
 
   &__item {
@@ -42,6 +68,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mobile {
+      width: 17.2rem;
+      padding: 2rem;
+    }
     img {
       width: 100%;
       height: auto;
@@ -58,6 +88,10 @@
     font-size: 1.6rem;
     line-height: 186%;
     color: #b01c32;
+    @include mobile {
+      line-height: 1.2;
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -68,6 +102,9 @@
   padding: 1.3rem 3rem;
   background-color: #f6f7f8;
   border-radius: 1.2rem;
+  @include mobile {
+    padding: 1.6rem;
+  }
   &__img {
     flex-shrink: 0;
     width: 8.4rem;
@@ -79,12 +116,23 @@
     justify-content: center;
     background-color: #e8e9ec;
     padding: 1.6rem;
+    @include mobile {
+      width: 7.2rem;
+      height: 7.2rem;
+      padding: 1.2rem;
+    }
     img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: contain;
       border-radius: 100%;
+    }
+  }
+  &__content {
+    @include mobile {
+      font-size: 1.4rem;
+      font-weight: 600;
     }
   }
 }

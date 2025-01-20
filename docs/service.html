@@ -69,6 +69,28 @@
           Перезвоните мне
         </button>
       </div>
+      <div class="header__mob">
+        <a href="tel:88002004434" class="header__call">
+          <svg
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.4543 18.2836L22.8097 18.9254C22.8097 18.9254 21.2755 20.4497 17.0892 16.2876C12.903 12.1254 14.4372 10.6011 14.4372 10.6011L14.8424 10.1959C15.844 9.20138 15.9389 7.60338 15.0648 6.43605L13.2798 4.0518C12.1975 2.6068 10.1079 2.41555 8.86833 3.64805L6.64416 5.85805C6.03075 6.47005 5.61991 7.26055 5.6695 8.13888C5.797 10.3871 6.81416 15.2222 12.4865 20.8634C18.5031 26.8446 24.1485 27.0826 26.4562 26.8672C27.1872 26.7992 27.8219 26.4281 28.3333 25.9181L30.345 23.9177C31.705 22.5676 31.3225 20.2514 29.5828 19.3065L26.877 17.8346C25.7352 17.2155 24.3468 17.3968 23.4543 18.2836Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+        <button
+          class="btn-reset burger header__burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          data-burger
+        ></button>
+      </div>
     </div>
   </div>
   <div class="header__nav">
@@ -96,7 +118,58 @@
     </div>
   </div>
 </header>
-<div class="modal modal-form">
+<div class="menu" data-menu>
+  <div class="menu__body">
+    <nav class="nav menu__nav">
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="./" class="nav__link">Главная</a></li>
+        <li class="nav__item">
+          <a href="./service.html" class="nav__link">Услуги</a>
+        </li>
+        <li class="nav__item">
+          <a href="./fransh.html" class="nav__link">Сотрудничество</a>
+        </li>
+        <li class="nav__item">
+          <a href="./fransh.html" class="nav__link">Франшиза</a>
+        </li>
+        <li class="nav__item">
+          <a href="./contacts.html" class="nav__link">Контакты</a>
+        </li>
+        <li class="nav__item">
+          <a href="./about.html" class="nav__link">О нас</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu__bottom">
+      <div class="footer__socials menu__socials">
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#whatsapp"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tg"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__soc">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg>
+        </a>
+      </div>
+      <a href="#" class="btn btn--stroke menu__btn">
+        Контакты и адреса мастерских
+      </a>
+    </div>
+  </div>
+</div>
+ <div class="modal modal-form">
   <div class="modal__body">
     <div class="modal__close">
       <svg
@@ -337,9 +410,28 @@
         <a href="#" class="footer__link"> Контакты и адреса мастерских </a>
       </div>
       <div class="footer__col">
-        <nav class="footer__nav f-nav">
-          <div class="f-nav__capture capture">Каталог</div>
-          <ul class="list-reset f-nav__list">
+        <nav class="footer__nav f-nav dropdown">
+          <div class="f-nav__capture capture dropdown-btn">
+            Каталог
+            <div class="f-nav__arrow">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10.5L12 15.5L17 10.5"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="list-reset f-nav__list dropdown-content">
             <li class="f-nav__item">
               <a href="#" class="f-nav__link">Ремонт чемоданов</a>
             </li>
@@ -356,9 +448,28 @@
         </nav>
       </div>
       <div class="footer__col">
-        <nav class="footer__nav f-nav">
-          <div class="f-nav__capture capture">Информация</div>
-          <ul class="list-reset f-nav__list">
+        <nav class="footer__nav f-nav dropdown">
+          <div class="f-nav__capture capture dropdown-btn">
+            Информация
+            <div class="f-nav__arrow">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10.5L12 15.5L17 10.5"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="list-reset f-nav__list dropdown-content">
             <li class="f-nav__item">
               <a href="#" class="f-nav__link">Услуги</a>
             </li>

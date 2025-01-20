@@ -14,7 +14,7 @@
   transition: 0.3s ease-out;
 
   &.active {
-    z-index: 100;
+    z-index: 1000;
     opacity: 1;
   }
   &__body {

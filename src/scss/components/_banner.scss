@@ -9,6 +9,10 @@
     border-radius: 1.2rem;
     position: relative;
     overflow: hidden;
+    @include mobile {
+      background-size: 26.4rem auto, cover;
+      background-position: 50% 0rem, center;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -22,6 +26,13 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+
+      @include mobile {
+        top: 2rem;
+        left: unset;
+        right: 0.5rem;
+        transform: none;
+      }
     }
   }
 
@@ -31,6 +42,11 @@
     width: 100%;
     max-width: 61.5rem;
     flex-shrink: 0;
+
+    @include mobile {
+      max-width: 100%;
+      padding: 5rem 1.6rem;
+    }
   }
 
   &__subtitle {
@@ -38,10 +54,18 @@
     font-weight: 500;
     font-size: 2.4rem;
     color: #f6f7f8;
+    @include mobile {
+      font-size: 2rem;
+      margin-bottom: 0.6rem;
+    }
   }
 
   &__title {
     margin-bottom: 3.5rem;
+    @include mobile {
+      font-size: 3.2rem;
+      margin-bottom: 4rem;
+    }
   }
 
   &__items {
@@ -51,16 +75,21 @@
   }
   &__item {
     display: flex;
-    max-width: 2rem;
     align-items: center;
     gap: 1.5rem;
     flex: 1 0 auto;
     &:nth-child(odd) {
       max-width: 25.5rem;
       flex-shrink: 0;
+      @include mobile {
+        max-width: 24rem;
+      }
     }
     &:nth-child(even) {
       max-width: 22.8rem;
+      @include mobile {
+        max-width: 24rem;
+      }
     }
   }
   &__icon {
@@ -88,6 +117,9 @@
   &__img {
     position: relative;
     flex: 1;
+    @include mobile {
+      display: none;
+    }
     img {
       position: absolute;
       left: 0;

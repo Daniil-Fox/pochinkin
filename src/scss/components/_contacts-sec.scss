@@ -1,15 +1,20 @@
 .contacts {
   margin-bottom: 10rem;
+  @include mobile {
+    margin-bottom: 5rem;
+  }
   &__title {
     margin-bottom: 3rem;
   }
 
   &__row {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 3rem;
     gap: 2rem;
+
     &--30 {
-      gap: 3rem;
+      flex-wrap: nowrap;
     }
   }
 
@@ -21,7 +26,10 @@
     cursor: pointer;
     font-weight: 600;
     font-size: 1.6rem;
-
+    @include mobile {
+      flex: 1;
+      text-align: center;
+    }
     &.active {
       cursor: default;
       pointer-events: none;
@@ -40,7 +48,7 @@
     font-weight: 600;
     font-size: 2rem;
     color: #303030;
-
+    width: auto;
     &.active {
       text-decoration: underline;
       text-decoration-skip-ink: none;
@@ -57,6 +65,7 @@
     border-radius: 0.8rem;
     overflow: hidden;
     padding: 1.2rem;
+    border: none;
   }
   &__search {
     position: absolute;
@@ -78,6 +87,11 @@
     font-weight: 600;
     font-size: 3.6rem;
     color: #b01c32;
+
+    @include mobile {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
   }
 }
 
@@ -86,7 +100,9 @@
   justify-content: space-between;
   padding-bottom: 2rem;
   border-bottom: 1px solid #f6f7f8;
-
+  @include mobile {
+    flex-direction: column;
+  }
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -96,6 +112,14 @@
     font-weight: 600;
     font-size: 2rem;
     color: #303030;
+    @include mobile {
+      font-size: 1.6rem;
+    }
+  }
+  &__info {
+    @include mobile {
+      margin-bottom: 1.6rem;
+    }
   }
   &__metro {
     font-weight: 600;
@@ -108,6 +132,9 @@
     align-items: flex-end;
     gap: 1rem;
     font-weight: 600;
+    @include mobile {
+      align-items: flex-start;
+    }
     a {
       color: inherit;
     }
